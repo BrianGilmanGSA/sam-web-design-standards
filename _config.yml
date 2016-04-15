@@ -9,7 +9,8 @@ kramdown:
 
 name: Draft SAM Web Design Standards
 
-source: /
+# gh-pages requires index in root
+# source: docs
 
 version: 0.1.0
 
