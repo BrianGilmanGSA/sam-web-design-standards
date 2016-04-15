@@ -50,8 +50,18 @@ title: Text Input
 // to get the HTML output
 $output = $input->getHtml();
 
-// to render the HTML output
-echo $output;</code></pre>
+// to render the HTML output (first example)
+echo $output;
+
+// update configuration
+$input->setHint('Instructional text.');
+
+// render updated HTML output (second example)
+echo $input->getHtml();
+
+// render updated HTML output (third example)
+echo $input->setErrorMessage('Helpful error message')
+	->getHtml();</code></pre>
   </div>
 </div>
 
