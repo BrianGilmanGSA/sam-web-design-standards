@@ -37,20 +37,23 @@ title: Text Input
     PHP Usage
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-	<pre><code>SAMUIKit\FormControls::textInput($config);</code></pre>
-	<p>Returns unescaped HTML output without instantiating an object.</p>
-
 	<pre><code>SAMUIKit\FormControls::createTextInput($config = null);</code></pre>
 	<p>Returns an instance of the TextInput class. Allows method chaining:</p>
-<pre><code>$input = SAMUIKit\FormControls::createTextInput()
-	->setLabel('Text input label')
+<pre><code>// render unescaped HTML
+echo SAMUIKit\FormControls::textInput($config);
+
+// return instance of class
+$input = SAMUIKit\FormControls::createTextInput();
+
+// configure the instance
+$input->setLabel('Text input label')
 	->setName('input-type-text')
 	->setType('text');
 
-// to get the HTML output
+// get the HTML output
 $output = $input->getHtml();
 
-// to render the HTML output (first example)
+// render the HTML output (first example)
 echo $output;
 
 // update configuration
