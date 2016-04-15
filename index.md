@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /{{ site.baseurl }}
 layout: homepage
 title: Draft U.S. Web Design Standards
 ---

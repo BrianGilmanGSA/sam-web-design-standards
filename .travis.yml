@@ -11,14 +11,3 @@ install:
 
 script:
   - npm run deploy
-
-notifications:
-  email:
-    - julia.elman@gsa.gov
-    - maya.ben-ari@gsa.gov
-    - roger.ruiz@gsa.gov
-
-branches:
-  only:
-    - 18f-pages
-    - 18f-pages-staging
