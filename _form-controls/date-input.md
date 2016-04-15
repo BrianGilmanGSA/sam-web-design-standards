@@ -95,7 +95,7 @@ title: Date Input
 	
 <p><strong>Note:</strong> The name will be appended with 1, 2, 3, for month, day, and year, respectively.</p>
 
-	<h4 class="usa-heading">Text input</h4>
+	<h4 class="usa-heading">Date input</h4>
 	<h5>Optional keys</h5>
 	<ul>
 	<li><strong>month:</strong> The value of the month field.</li>
