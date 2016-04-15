@@ -136,7 +136,8 @@ title: Select
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
 	
-	<pre><code>SAMUIKit\FormControls::select($config);</code></pre>
+	<pre><code>// render unescaped HTML string
+  	echo SAMUIKit\FormControls::select($config);</code></pre>
 
 	<p>Returns unescaped HTML output without instantiating an object.</p>
   </div>

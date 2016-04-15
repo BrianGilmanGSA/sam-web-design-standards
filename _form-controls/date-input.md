@@ -78,8 +78,8 @@ title: Date Input
     PHP Usage
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-	<code><pre>SAMUIKit\FormControls::dateInput($config);</pre></code>
-	<p>Returns unescaped HTML output without instantiating an object.</p>
+	<pre><code>// render unescaped HTML string
+  echo SAMUIKit\FormControls::dateInput($config);</code></pre>
   </div>
 </div>
 
