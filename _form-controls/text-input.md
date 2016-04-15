@@ -37,8 +37,6 @@ title: Text Input
     PHP Usage
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-	<pre><code>SAMUIKit\FormControls::createTextInput($config = null);</code></pre>
-	<p>Returns an instance of the TextInput class. Allows method chaining:</p>
 <pre><code>// render unescaped HTML
 echo SAMUIKit\FormControls::textInput($config);
 
