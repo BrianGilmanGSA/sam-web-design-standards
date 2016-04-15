@@ -22,7 +22,7 @@ title: Select
 	<div class="usa-input-error">
 		<label for="options" class="usa-input-error-label">Dropdown label</label>
 		<span id="options-input-error" class="usa-input-error-message" role="alert">Helpful error message</span>
-		<select name="options" id="options" aria-describedby="options-input-error">
+		<select name="options2" id="options" aria-describedby="options-input-error">
 			<option value="value1">Option A</option>
 			<option value="value2">Option B</option>
 			<option value="value3">Option C</option>
@@ -62,16 +62,16 @@ title: Select
 
 		<ul class="usa-unstyled-list">
 			<li>
-				<input id="apple-pie" type="checkbox" name="pies[]" value="apple-pie" checked />
-				<label for="apple-pie">Sojourner Truth</label>
+				<input id="apple-pie2" type="checkbox" name="pies2[]" value="apple-pie" checked />
+				<label for="apple-pie2">Sojourner Truth</label>
 			</li>
 			<li>
-				<input id="key-lime-pie" aria-describedby="pies-input-error" type="checkbox" name="pies[]" value="key-lime-pie">
-				<label for="key-lime-pie">Frederick Douglass</label>
+				<input id="key-lime-pie2" aria-describedby="pies-input-error" type="checkbox" name="pies2[]" value="key-lime-pie">
+				<label for="key-lime-pie2">Frederick Douglass</label>
 			</li>
 			<li>
-				<input id="peach-pie" aria-describedby="pies-input-error" type="checkbox" name="pies[]" value="peach-pie">
-				<label for="peach-pie">Booker T. Washington</label>
+				<input id="peach-pie2" aria-describedby="pies-input-error" type="checkbox" name="pies2[]" value="peach-pie">
+				<label for="peach-pie2">Booker T. Washington</label>
 			</li>
 			<li>
 				<input id="disabled" aria-describedby="pies-input-error" type="checkbox" disabled />
@@ -112,16 +112,16 @@ title: Select
 		<span id="soup-input-error" class="usa-input-error-message" role="alert">Helpful error message</span>
 		<ul class="usa-unstyled-list">
 			<li>
-				<input id="pea-soup" aria-describedby="soup-input-error" type="radio" checked name="soup" value="pea">
-				<label for="pea-soup">Elizabeth Cady Stanton</label>
+				<input id="pea-soup2" aria-describedby="soup-input-error" type="radio" checked name="soup2" value="pea">
+				<label for="pea-soup2">Elizabeth Cady Stanton</label>
 			</li>
 			<li>
-				<input id="chicken-noodle" aria-describedby="soup-input-error" type="radio" name="soup" value="chicken-noodle">
-				<label for="chicken-noodle">Susan B. Anthony</label>
+				<input id="chicken-noodle2" aria-describedby="soup-input-error" type="radio" name="soup2" value="chicken-noodle">
+				<label for="chicken-noodle2">Susan B. Anthony</label>
 			</li>
 			<li>
-				<input id="tomato" aria-describedby="soup-input-error" type="radio" name="soup" value="tomato">
-				<label for="tomato">Harriet Tubman</label>
+				<input id="tomato2" aria-describedby="soup-input-error" type="radio" name="soup2" value="tomato">
+				<label for="tomato2">Harriet Tubman</label>
 			</li>
 		</ul>
 
@@ -136,10 +136,10 @@ title: Select
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
 	
-<pre><code>// render unescaped HTML string
-echo SAMUIKit\FormControls::select($config);</code></pre>
+	<pre><code>SAMUIKit\FormControls::select($config);</code></pre>
 
- </div>
+	<p>Returns unescaped HTML output without instantiating an object.</p>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
