@@ -19,13 +19,13 @@
         {{ content }}
       </div>
 
+      {% capture my-include %}{% include acronyms.md %}{% endcapture %}
+      {{ my-include | markdownify }}
+
       <footer class="usa-styleguide-footer">
         {% include footer.html %}
       </footer>
     </div>
-
-    {% include acronyms.md %}
-
     {% include analytics.html %}
 
     {% include scripts.html %}
