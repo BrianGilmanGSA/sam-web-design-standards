@@ -69,7 +69,7 @@ module.exports = {
 
   logIntroduction: function (message) {
 
-    message = message || 'Draft U.S. Web Design Standards';
+    message = message || 'Draft SAM Web Design Standards';
 
     gutil.log(
       gutil.colors.yellow('v' + pkg.version),

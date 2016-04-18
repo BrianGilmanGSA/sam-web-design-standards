@@ -1,40 +1,44 @@
 // Vendor -------------- //
 
-@import 'lib/bourbon';
-@import 'lib/neat';
-@import 'lib/normalize';
+@import 'node_modules/uswds/bourbon';
+@import 'node_modules/uswds/neat';
+@import 'node_modules/uswds/normalize';
 
 
 // Core -------------- //
 
-@import 'core/defaults';
-@import 'core/variables';
-@import 'core/fonts';
-@import 'core/base';
-@import 'core/grid-settings';
-@import 'core/grid';
-@import 'core/utilities';
+@import 'node_modules/uswds/defaults';
+@import 'node_modules/uswds/variables';
+@import 'node_modules/uswds/fonts';
+@import 'node_modules/uswds/base';
+@import 'node_modules/uswds/grid-settings';
+@import 'node_modules/uswds/grid';
+@import 'node_modules/uswds/utilities';
 
 
 // Elements -------------- //
 // Styles basic HTML elements
 
-@import 'elements/buttons';
-@import 'elements/figure';
-@import 'elements/inputs';
-@import 'elements/labels';
-@import 'elements/list';
-@import 'elements/table';
-@import 'elements/typography';
+@import 'node_modules/uswds/buttons';
+@import 'node_modules/uswds/figure';
+@import 'node_modules/uswds/inputs';
+@import 'node_modules/uswds/labels';
+@import 'node_modules/uswds/list';
+@import 'node_modules/uswds/table';
+@import 'node_modules/uswds/typography';
 
 
 // Components -------------- //
 
-@import 'components/accordions';
-@import 'components/alerts';
-@import 'components/disclaimer';
-@import 'components/footer';
-@import 'components/forms';
-@import 'components/search';
-@import 'components/sidenav';
-@import 'components/skipnav';
+@import 'node_modules/uswds/accordions';
+@import 'node_modules/uswds/alerts';
+@import 'node_modules/uswds/disclaimer';
+@import 'node_modules/uswds/footer';
+@import 'node_modules/uswds/forms';
+@import 'node_modules/uswds/search';
+@import 'node_modules/uswds/sidenav';
+@import 'node_modules/uswds/skipnav';
+
+nav.usa-site-navbar {
+	background: red;
+}
