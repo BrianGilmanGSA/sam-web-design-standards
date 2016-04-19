@@ -1,4 +1,4 @@
-# Draft U.S. Web Design Standards
+# Draft SAM Web Design Standards
 
 [![Build Status](https://api.travis-ci.org/18F/web-design-standards.svg?branch=18f-pages-staging)](https://travis-ci.org/18F/web-design-standards)
 
@@ -76,11 +76,11 @@ to your project's `package.json` as a dependency:
 npm install --save uswds
 ```
 
-The package will be installed in `node_modules/uswds`. You can use the files
+The package will be installed in `node_modules/samwds`. You can use the files
 found in the `src/` directory.
 
 ```
-node_modules/uswds/
+node_modules/samwds/
 ├── dist/
 │   ├── css/
 │   ├── fonts/
@@ -93,7 +93,7 @@ node_modules/uswds/
     └── stylesheets/
 ```
 
-`require('uswds')` will load all of the Draft U.S. Web Design Standard's JavaScript onto the page. The `uswds` module itself does not export anything.
+`require('samwds')` will load all of the Draft SAM Web Design Standard's JavaScript onto the page. The `samwds` module itself does not export anything.
 
 The main Sass (SCSS) source file is here:
 
