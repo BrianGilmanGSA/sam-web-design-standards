@@ -1,5 +1,9 @@
 // USWDS --------------- //
 
-@import '../node_modules/uswds/src/stylesheets/all';
+// We want to ignore node_modules;
+// therefore, for GitHub Pages to work,
+// we need to include the USWDS src in our Jekyll build.
+@import 'uswds/src/stylesheets/all';
 
 // Begin SAMWDS -------- //
+
