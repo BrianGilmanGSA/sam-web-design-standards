@@ -1,7 +1,7 @@
 {
-  "name": "uswds",
-  "version": "0.9.1",
-  "description": "Open source UI components and visual style guide for U.S. government websites",
+  "name": "samwds",
+  "version": "0.1.0",
+  "description": "Open source UI components and visual style guide for the System for Award Management environment.",
   "main": "src/js/start.js",
   "scripts": {
     "prepublish": "bundle && gulp copy-vendor-sass && gulp build",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/18F/web-design-standards.git"
   },
-  "author": "18F",
+  "author": "SAM",
   "contributors": [
     "Josh Bruce <joshua.bruce@gsa.gov>"
   ],
