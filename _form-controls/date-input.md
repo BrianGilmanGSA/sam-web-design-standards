@@ -6,6 +6,7 @@ title: Date Input
 
 <p class="usa-font-lead">See <a href="https://playbook.cio.gov/designstandards/form-controls/#date-input">US Web Design Standards</a> for design description.</p>
 
+<p>The date input form control allows you to genrate the USWDS date input form control.</p>
 <div class="preview">
 
   <fieldset>

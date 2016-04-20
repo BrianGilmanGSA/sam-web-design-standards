@@ -2,9 +2,10 @@
 layout: styleguide
 type: form-control
 title: Text Input
+lead: See <a href="https://playbook.cio.gov/designstandards/form-controls/#text-inputs">US Web Design Standards</a> for design description.
 ---
 
-<p class="usa-font-lead">See <a href="https://playbook.cio.gov/designstandards/form-controls/#text-inputs">US Web Design Standards</a> for design description.</p>
+<p>The text input component allows you to generate a text, email, or password <code>input</code> element of that type, or a <code>textarea</code>.</p>
 
 <div class="preview">
 	<div>
