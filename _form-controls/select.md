@@ -6,6 +6,8 @@ title: Select
 
 <p class="usa-font-lead">See US Web Design Standards for design description. Covers: <a href="https://playbook.cio.gov/designstandards/form-controls/#dropdown">dropdown</a>, <a href="https://playbook.cio.gov/designstandards/form-controls/#checkboxes">checkboxes</a>, and <a href="https://playbook.cio.gov/designstandards/form-controls/#radiobuttons">radio buttons</a>.</p>
 
+<p>The select form control allows you to generate <code>select</code>, <code>checkbox</code>, and <code>radio</code> form controls.</p>
+
 <div class="preview">
 <form>
 	<div>

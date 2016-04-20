@@ -1,34 +1,15 @@
 # Draft SAM Web Design Standards
 
-[![Build Status](https://api.travis-ci.org/18F/web-design-standards.svg?branch=18f-pages-staging)](https://travis-ci.org/18F/web-design-standards)
+The [Draft SAM Web Design Standards](http://jbrucegsa.github.io/sam-web-design-standards/) extend the [Draft U.S. Web Design Standards](https://playbook.cio.gov/designstandards), which include a library of open source UI components and visual style guide for U.S. federal government websites.
 
-The [Draft U.S. Web Design Standards](https://playbook.cio.gov/designstandards) include a library of open source UI components and a visual style guide for U.S. federal government websites.
-
-These tools follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. Created and maintained by [U.S. Digital Service](https://www.whitehouse.gov/digital/united-states-digital-service) and [18F](https://18f.gsa.gov/) designers and developers, the Draft Web Design Standards are designed for use by government product teams who want to create beautiful, easy-to-use online experiences for the public. To learn more about the project, check out this [blog post](https://18f.gsa.gov/2015/09/28/web-design-standards/).
-
-## Getting started
-
-We’re glad you’d like to use the Standards — here’s how you can get started:
-
-* Designers: Check out our Getting Started for Designers information [here](https://playbook.cio.gov/designstandards/getting-started/).
-    * Design files of all the assets included on this site are available for download [here](https://playbook.cio.gov/designstandards/assets/releases/wds-design-assets.zip).
-* Developers: Follow the instructions in this README to get started.
-    * CSS, JavaScript, image, and font files of all the assets on this site are available for download [here](https://github.com/18F/web-design-standards/releases/download/v0.9.1/uswds-0.9.1.zip).
-
-Here are a few different ways to use the Standards within your project.
+In addition to defining standards for HTML structure and applied CSS styles, developers for the SAM environment have created user-interface kits (UI kits) available separately to make it even easier to get up and running with developing sites that follow these standards. Further, using the UI kits allows you to quickly develop functioning user interfaces that comply with these standards and allows all of us to make global changes to the SAM environment front-end with minimal development time.
 
 ## Download
 
-To use the Draft Web Design Standards on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.
-
-First, download the Draft Web Design Standards assets:
-
-[https://github.com/18F/web-design-standards/releases/download/v0.9.1/uswds-0.9.1.zip](https://github.com/18F/web-design-standards/releases/download/v0.9.1/uswds-0.9.1.zip)
-
-Then, add the `dist` directory files into a relevant place in your code base — likely a directory where you keep third-party libraries:
+Go to our [releases page](https://github.com/jbrucegsa/sam-web-design-standards/releases) and download the samwds zip file. Add the contents of the archive into a relevant place in your code base — likely a directory where you keep third-party libraries:
 
 ```
-uswds-0.9.1/
+sanwds-[version]/
 ├── js/
 │   ├── uswds.min.js.map
 │   ├── uswds.min.js
@@ -47,19 +28,17 @@ into your HTML pages:
 Add this to your `<head>` element:
 
 ```html
-<link rel="stylesheet" href="/path/to/your/assets/css/lib/uswds.min.css">
+<link rel="stylesheet" href="/path/to/your/assets/css/lib/samwds.min.css">
 ```
 
 Add this before the closing `</body>` tag:
 
 ```html
-<script src="/path/to/your/assets/js/lib/uswds.min.js"></script>
+<script src="/path/to/your/assets/js/lib/samwds.min.js"></script>
 ```
 
-We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
-of your downloaded assets. And the un-minified version is better if you are in a
-development environment or would like to debug the CSS or JavaScript assets in
-the browser. The examples above recommend using the minified versions.
+We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size of your downloaded assets. And the un-minified version is better if you are in a
+development environment or would like to debug the CSS or JavaScript assets in the browser. The examples above recommend using the minified versions.
 
 This version of the Standards includes jQuery version `2.2.0` bundled within the
 JavaScript file. Please make sure that you're not including any other version
@@ -69,43 +48,7 @@ And that’s it — you should be set to use the Standards.
 
 ## Using npm
 
-If you have `node` installed on your machine, you can use npm to install the Standards. Add `uswds`
-to your project's `package.json` as a dependency:
-
-```shell
-npm install --save uswds
-```
-
-The package will be installed in `node_modules/samwds`. You can use the files
-found in the `src/` directory.
-
-```
-node_modules/samwds/
-├── dist/
-│   ├── css/
-│   ├── fonts/
-│   ├── img/
-│   ├── js/
-└── src/
-    ├── fonts/
-    ├── img/
-    ├── js/
-    └── stylesheets/
-```
-
-`require('samwds')` will load all of the Draft SAM Web Design Standard's JavaScript onto the page. The `samwds` module itself does not export anything.
-
-The main Sass (SCSS) source file is here:
-
-```
-node_modules/uswds/src/stylesheets/all.scss
-```
-
-The non-minified CSS that’s been precompiled is here:
-
-```
-node_modules/uswds/dist/css/uswds.css
-```
+**Coming soon**
 
 ## Using another framework or package manager
 

@@ -47,20 +47,7 @@ lead: A block that allows users to search for specific content if they know what
       <input id="search-field-big" type="search" name="search">
         <button type="submit">
           <span class="usa-search-submit-text">Search</span>
-        </button>
-        <div class="usa-width-one-whole">
-          <div>
-            <fieldset class="usa-field-set">
-              <legend class="usa-sr-only">Toggle-like application of checkbox</legend>
-              <ul class="usa-unstyled-list">
-                <li>
-                  <input id="f3opt1-filter_name_3" type="checkbox" name="filter_name_3[]" value="f3opt1">
-                  <label for="f3opt1-filter_name_3">Exclude historical data?</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-        </div>      
+        </button>     
         <div class="usa-width-one-half" style="margin-right: 7px;">
           <div>
             <label for="filter_name">Filter label</label>
@@ -81,7 +68,20 @@ lead: A block that allows users to search for specific content if they know what
             </select>
           </div>
         </div>
-      </div>
+        <div class="usa-width-one-whole">
+          <div>
+            <fieldset class="usa-fieldset-inputs">
+              <legend class="usa-sr-only">Toggle-like application of checkbox</legend>
+              <ul class="usa-unstyled-list">
+                <li>
+                  <input id="f3opt1-filter_name_3" type="checkbox" name="filter_name_3[]" value="f3opt1">
+                  <label for="f3opt1-filter_name_3">Exclude historical data?</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>         
+      </div>      
     </form>
   </div>
 </div>
