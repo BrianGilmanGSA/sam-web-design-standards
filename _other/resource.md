@@ -66,7 +66,8 @@ echo SAMUIKit\Other::resource([
   'metadata' => [
     [
       'template' => 'Other|label',
-      'config' => [
+      'config' => 
+      [
         'title' => 'New',
         'surround' => '&lt;p&gt;|&lt;/p&gt;'
       ]
