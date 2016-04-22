@@ -55,6 +55,9 @@ collections:
   # components:
   #   output: true
   #   permalink: /:path/
+  navigation:
+    output: true
+    permalink: /navigation/:path/
   form-controls:
     output: true
     permalink: /form-controls/:path/
