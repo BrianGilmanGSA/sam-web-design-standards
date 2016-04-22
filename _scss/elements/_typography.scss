@@ -1,8 +1,13 @@
 .usa-content {
   ol, ul {
     max-width: $text-max-width;
-  }  
+  }
 }
+
+.usa-code-sample .usa-unstyled-list, .usa-accordion ul, .usa-accordion-bordered ul {
+  max-width: 100%;
+} 
+
 
 // Background and text color combinations
 
