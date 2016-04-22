@@ -41,6 +41,9 @@ lead: See <a href="https://playbook.cio.gov/designstandards/form-controls/#text-
 <pre><code>// render unescaped HTML
 echo SAMUIKit\FormControls::textInput($config);
 
+// render multiple text inputs
+echo SAMUIKit\FormControls::multipleTextInputs($textInputConfigurations);
+
 // return instance of class
 $input = SAMUIKit\FormControls::createTextInput();
 
