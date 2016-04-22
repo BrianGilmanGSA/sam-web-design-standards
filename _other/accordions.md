@@ -6,6 +6,8 @@ title: Accordions
 lead: See <a href="https://standards.usa.gov/accordions/">US Web Design Standards</a> for design description.
 ---
 
+<p>Note: If the accordion content contains a list, at present, the list can only be one level deep for proper styling.</p>
+
 <div class="preview">
 
   <h6>Borderless</h6>
@@ -14,13 +16,13 @@ lead: See <a href="https://standards.usa.gov/accordions/">US Web Design Standard
       <li>
         <button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-1">Collapsed Accordion 1</button>
         <div id="collapsible-1" aria-hidden="true" class="usa-accordion-content">
-          <ul>
+          <ol>
             <li>This</li>
             <li>accordion</li>
             <li>was</li>
             <li>collapsed</li>
             <li>initially.</li>
-          </ul>
+          </ol>
         </div>
       </li>
       <li>
