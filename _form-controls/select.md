@@ -1,4 +1,5 @@
 ---
+permalink: /form-controls/select/
 layout: styleguide
 type: form-control
 title: Select

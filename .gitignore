@@ -11,6 +11,7 @@ _site/
 
 # Ignore Node specific files and directories
 #
+# only ignore the root-level node_modules directory
 /node_modules/
 npm-debug.log
 

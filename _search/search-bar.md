@@ -112,12 +112,12 @@ lead: A block that allows users to search for specific content if they know what
     <li><strong>label:</strong> Label text - not displayed.</li>
     <li><strong>type:</strong> big|medium|small</li>
     <li><strong>action:</strong> The path for the form to go to when submitted.</li>
-    <li><strong>method:</strong> POST|GET</li>
   </ul>
 
   <h5>Optional keys</h5>
   <ul>
+    <li><strong>method:</strong> POST|GET (default is GET). Not case-sensitive.</li>  
     <li><strong>keywords:</strong> An array of keywords to place within the search field. Will be converted to spaced-separated string.</li>
-    <li><strong>filters:</strong> Array of form control Select configurations. See Form Controls Select.</li>
+    <li><strong>filters:</strong> Array of form control Select configurations. See <a href="{{ site.baseurl }}/form-controls/select">Form Controls Select</a>.</li>
   </ul>
 </div>

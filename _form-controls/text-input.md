@@ -1,4 +1,5 @@
 ---
+permalink: /form-controls/text-input/
 layout: styleguide
 type: form-control
 title: Text Input
@@ -40,6 +41,9 @@ lead: See <a href="https://playbook.cio.gov/designstandards/form-controls/#text-
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
 <pre><code>// render unescaped HTML
 echo SAMUIKit\FormControls::textInput($config);
+
+// render multiple text inputs
+echo SAMUIKit\FormControls::multipleTextInputs($textInputConfigurations);
 
 // return instance of class
 $input = SAMUIKit\FormControls::createTextInput();

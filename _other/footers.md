@@ -1,8 +1,9 @@
 ---
+permalink: /other/footers/
 layout: styleguide
 type: component
 title: Footers
-lead: Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+lead: See <a href="https://standards.usa.gov/footers/">US Web Design Standards</a> for design and accessbiility description.
 ---
 
 <div class="preview">
@@ -219,6 +220,47 @@ lead: Footers serve site visitors who arrive at the bottom of a page without fin
       </div>
     </div>
   </footer>
+
+  <h6 class="usa-heading-alt">Slim with only required configuration</h6>
+  <footer class="usa-footer usa-footer-slim usa-sans" role="contentinfo">
+    <div class="usa-grid usa-footer-return-to-top">
+      <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer-secondary_section">
+      <div class="usa-grid">
+        <div class="usa-footer-logo">
+          <img class="usa-footer-slim-logo-img" src="{{ site.baseurl }}/assets/img/logo-img.png" alt="Alternative description of logo">
+          <h3 class="usa-footer-slim-logo-heading">Name of Agency</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <h6 class="usa-heading-alt">Medium and big with only required configuration</h6>
+  <footer class="usa-footer usa-footer-medium usa-sans" role="contentinfo">
+    <div class="usa-grid usa-footer-return-to-top">
+      <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer-secondary_section">
+      <div class="usa-grid">
+        <div class="usa-footer-logo usa-width-one-half">
+          <img class="usa-footer-img" src="{{ site.baseurl }}/assets/img/logo-img.png" alt="Alternative description of logo">
+          <h3 class="usa-footer-logo-heading">Name of Agency</h3>
+        </div>
+      </div>
+    </div>
+  </footer>  
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="false" aria-controls="collapsible-0">
+    PHP Usage
+  </button>
+  <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
+<pre><code>// render unescaped HTML string
+echo SAMUIKit\Other::footer($config)</code></pre>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -227,29 +269,35 @@ lead: Footers serve site visitors who arrive at the bottom of a page without fin
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Accessibility</h4>
-    <ul class="usa-content-list">
-      <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
-      <li>On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.</li>
+    <h4 class="usa-heading">Footers</h4>
+    <h5>Required keys</h5>
+    <ul>
+      <li><strong>type:</strong> big|medium|slim</li>
+      <li><strong>logo:</strong> Array - See Logo required keys below.</li>
+      <li><strong>name:</strong> Name to display within footer - under logo.</li>
     </ul>
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-      <li>Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.</li>
-      <li>Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.</li>
-      <li>Use the slim footer when you only want to offer a few footer links and nothing else.</li>
-    </ul>
-    <h5>When to consider something else</h5>
-    <ul class="usa-content-list">
-      <li>Avoid using the medium and slim footers when your footer has more than five links.</li>
-    </ul>
-    <h5>Guidance</h5>
-    <ul class="usa-content-list">
-      <li>Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.</li>
-      <li>Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).</li>
-      <li>Include the newsletter sign up if one of your website’s goals is getting visitors to sign up for a newsletter.</li>
-      <li>Link only to social media your agency updates frequently or uses to communicate with customers.</li>
-      <li>Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.</li>
+    <h5>Optional keys</h5>
+    <ul>
+      <li><strong>links:</strong> Key-value array where "key" is the target and "value" is the link text to display. Note: Only used with medium and slim types.</li>
+      <li><strong>sections:</strong> Array - See Sections required keys below. Note: Only used with big type.</li>
+      <li><strong>number:</strong> Contact phone number.</li>
+      <li><strong>email:</strong> Contact email address.</li>
+      <li><strong>social:</strong> Array - See Social optional keys below. Note: Only used with big and medium types.</li>
+      <li><strong>signUpTarget:</strong> Action destination for sign up form. Note: Only used with big type.</li>
+    </ul> 
+    <h5>Logo required keys</h5>
+    <ul>
+      <li><strong>path:</strong> The path to the logo image.</li>
+      <li><strong>alt:</strong> The alternative text to display with the image.</li>
+    </ul>     
+    <h5>Social optional keys</h5>
+    <ul>
+      <li><strong>facebook|youtube|twitter|rss:</strong> Each key has a value of the target path for the generated link.</li>
+    </ul>         
+    <h5>Section required keys</h5>
+    <ul>
+      <li><strong>title:</strong> The title of the section.</li>
+      <li><strong>links:</strong> See "optional keys" above.</li>
     </ul>
   </div>
 </div>

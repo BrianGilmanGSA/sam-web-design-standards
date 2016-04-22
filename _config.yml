@@ -43,28 +43,29 @@ sass:
 #  style: :compressed
 
 collections:
-  visual:
-    output: true
-    permalink: /:path/
-  layout-system:
-    output: true
-    permalink: /:path/
-  elements:
-    output: true
-    permalink: /:path/
-  components:
-    output: true
-    permalink: /:path/
+  # visual:
+  #   output: true
+  #   permalink: /:path/
+  # layout-system:
+  #   output: true
+  #   permalink: /:path/
+  # elements:
+  #   output: true
+  #   permalink: /:path/
+  # components:
+  #   output: true
+  #   permalink: /:path/
   form-controls:
     output: true
     permalink: /form-controls/:path/
   form-templates:
     output: true
     permalink: /form-templates/:path/
-  other:
-    output: true
-    permalink: /other/:path/
   search:
     output: true
     permalink: /search/:path/
+  other:
+    output: true
+    permalink: /other/:path/
+
 
