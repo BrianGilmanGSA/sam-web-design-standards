@@ -12,7 +12,7 @@ name: Draft SAM Web Design Standards
 # gh-pages requires index in root
 # source: docs
 
-version: 0.1.0
+version: 0.1.1
 
 exclude:
 - go
