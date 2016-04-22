@@ -1,4 +1,5 @@
 ---
+permalink: /form-controls/date-input/
 layout: styleguide
 type: form-control
 title: Date Input

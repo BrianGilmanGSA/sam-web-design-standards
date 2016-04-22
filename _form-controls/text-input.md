@@ -1,4 +1,5 @@
 ---
+permalink: /form-controls/text-input/
 layout: styleguide
 type: form-control
 title: Text Input

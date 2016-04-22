@@ -1,4 +1,5 @@
 ---
+permalink: /other/alerts/
 layout: styleguide
 type: component
 title: Alerts

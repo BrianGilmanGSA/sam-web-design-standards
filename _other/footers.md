@@ -1,4 +1,5 @@
 ---
+permalink: /other/footers/
 layout: styleguide
 type: component
 title: Footers

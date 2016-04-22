@@ -1,4 +1,5 @@
 ---
+permalink: /other/tables/
 layout: styleguide
 type: element
 title: Tables
