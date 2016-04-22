@@ -10,15 +10,6 @@ When a front-end user is looking for high-level or general information, the fron
 
 When a front-end user knows the information (s)he is looking for, search becomes the better option; therefore, front-end users should be allowed to search using text with additional filtering capabilities within a given category.
 
-## Navigation
-
-
-Information Architecture, in terms of navigation, refers to the layout and depth of pages within a website. The *SAM Web Standards* recognizes three types of navigation, resulting in five levels of navigation for page-related content.
-
-1. **Main Navigation:** Contained within the [header](http://gsa.github.io/openIAE/sam_web_standards/components/#header) and [footer](http://gsa.github.io/openIAE/sam_web_standards/components/#footer) components, available on the majority (all) of the pages. From a front-end user perspective, this results in a change from transition.SAM.gov to something like transition.SAM.gov/wages or transition.SAM.gov/about/legal.
-2. **Category Navigation:** Appended to the header area and provides navigation within a primary are of the site (transition.SAM.gov/systeminformaiton); thereby, allowing each primary page to have sub-pages (“Due to Be Revised” within Wages, for example).
-3. **Side Navigation (up to three levels):** Navigation appearing in a vertical sidebar along the left side of pages using the [Side Navigation](https://playbook.cio.gov/designstandards/sidenav/) component from the *US Web Standards*. This type of navigation should be avoided, if possible or practical. Further, if possible, only one level of navigation will make it easier for a front-end user to navigate.
-
 ## Content
 
 Information Architecture, in terms of content, refers to how content is displayed. This could be the ordering of information within a block of content (chapters within a book, paragraphs within a chapter, sentences within a paragraph, and so on) or how sections of content are arranged within a page.
