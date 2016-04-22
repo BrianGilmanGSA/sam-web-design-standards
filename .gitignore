@@ -11,7 +11,7 @@ _site/
 
 # Ignore Node specific files and directories
 #
-node_modules/
+/node_modules/
 npm-debug.log
 
 # README: Ignore the dist directories
