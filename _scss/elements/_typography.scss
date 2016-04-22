@@ -1,3 +1,9 @@
+.usa-content {
+  ol, ul {
+    max-width: $text-max-width;
+  }  
+}
+
 // Background and text color combinations
 
 .usa-bgcolor-base {

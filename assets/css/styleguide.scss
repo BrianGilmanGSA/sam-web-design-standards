@@ -1017,3 +1017,17 @@ $font-light: 300;
   }
   padding-left: 2rem;
 }
+
+.footnotes {
+  border-top: 1px solid $color-black;
+
+  ol, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  ol {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+}
