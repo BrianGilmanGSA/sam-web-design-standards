@@ -1,12 +1,12 @@
 'use strict';
 
 var $ = require('jquery');
-var Accordion = require('./components/accordion');
-var toggleFieldMask = require('./components/toggle-field-mask');
-var togglePassword = require('./components/toggle-password');
-var toggleMultiPassword = require('./components/toggle-multi-password');
-var toggleSSN = require('./components/toggle-ssn');
-var validator = require('./components/validator');
+var Accordion = require('../../node_modules/uswds/src/js/components/accordion');
+var toggleFieldMask = require('../../node_modules/uswds/src/js/components/toggle-field-mask');
+var togglePassword = require('../../node_modules/uswds/src/js/components/toggle-password');
+var toggleMultiPassword = require('../../node_modules/uswds/src/js/components/toggle-multi-password');
+var toggleSSN = require('../../node_modules/uswds/src/js/components/toggle-ssn');
+var validator = require('../../node_modules/uswds/src/js/components/validator');
 
 // README: This is necessary because politespace doesn't properly export anything
 // in its package.json. TODO: Let's open a PR related to this so we can fix it in Politespace.js

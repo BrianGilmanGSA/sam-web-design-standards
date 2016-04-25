@@ -1,25 +1,11 @@
----
----
-
 // Imports -------------- //
 
-@import 'samwds';
+@import '../../src/stylesheets/all';
 
 // Variables ------------ //
 
-$text-width:      660px;
-$section-padding: 7.2rem;
-
 // Styles --------------- //
 
-p {
-  font-family: $font-sans;
-  font-size: 1.7rem;
-}
-
-.usa-intro {
-  max-width: $text-width;
-}
 
 .usa-section-examples {
   @include media($medium-screen) {

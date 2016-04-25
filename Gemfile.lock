@@ -45,6 +45,11 @@ DEPENDENCIES
   go_script
   jekyll
   json
+  kramdown
+  rake
   redcarpet
   rouge (= 1.9)
   scss_lint
+
+BUNDLED WITH
+   1.11.2

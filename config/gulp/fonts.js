@@ -7,7 +7,7 @@ gulp.task(task, function (done) {
   dutil.logMessage(task, 'Copying Fonts');
 
   var stream = gulp.src('src/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('assets/fonts'));
 
   return stream;
 

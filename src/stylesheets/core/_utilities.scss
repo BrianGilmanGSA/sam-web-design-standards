@@ -8,6 +8,7 @@
 @mixin usa-bgcolor-base() {
   @include bgcolor($color-base, $color-white);
 }
+
 @mixin usa-bgcolor-gray-warm-dark() {
   @include bgcolor($color-gray-warm-dark, $color-white);
 }
@@ -21,51 +22,51 @@
 }
 
 @mixin usa-bgcolor-primary-darkest() {
-  @include bgcolor($color-primary-darkest, $color-white); 
+  @include bgcolor($color-primary-darkest, $color-white);
 }
 
 @mixin usa-bgcolor-primary-darker() {
-  @include bgcolor($color-primary-darker, $color-white); 
+  @include bgcolor($color-primary-darker, $color-white);
 }
 
 @mixin usa-bgcolor-primary() {
-  @include bgcolor($color-primary, $color-white);  
+  @include bgcolor($color-primary, $color-white);
 }
 
 @mixin usa-bgcolor-cool-blue-light() {
-  @include bgcolor($color-cool-blue-light, $color-white);  
+  @include bgcolor($color-cool-blue-light, $color-white);
 }
 
 @mixin usa-bgcolor-primary-alt-darkest() {
-  @include bgcolor($color-primary-alt-darkest, $color-white);  
+  @include bgcolor($color-primary-alt-darkest, $color-white);
 }
 
 @mixin usa-bgcolor-primary-alt-dark() {
-  @include bgcolor($color-primary-alt-dark, $color-black);  
+  @include bgcolor($color-primary-alt-dark, $color-black);
 }
 
 @mixin usa-bgcolor-primary-alt() {
-  @include bgcolor($color-primary-alt, $color-black);  
+  @include bgcolor($color-primary-alt, $color-black);
 }
 
 @mixin usa-bgcolor-green() {
-  @include bgcolor($color-green, $color-white);  
+  @include bgcolor($color-green, $color-white);
 }
 
 @mixin usa-bgcolor-green-light() {
-  @include bgcolor($color-green-light, $color-black);  
+  @include bgcolor($color-green-light, $color-black);
 }
 
 @mixin usa-bgcolor-gold() {
-  @include bgcolor($color-gold, $color-black);  
+  @include bgcolor($color-gold, $color-black);
 }
 
 @mixin usa-bgcolor-gold-light() {
-  @include bgcolor($color-gold-light, $color-black);    
+  @include bgcolor($color-gold-light, $color-black);
 }
 
 @mixin usa-bgcolor-secondary-darkest() {
-  @include bgcolor($color-secondary-darkest, $color-white);    
+  @include bgcolor($color-secondary-darkest, $color-white);
 }
 
 @mixin usa-bgcolor-secondary-dark() {
@@ -77,11 +78,11 @@
 }
 
 @mixin usa-bgcolor-gray-light() {
-  @include bgcolor($color-gray-light, $color-black); 
+  @include bgcolor($color-gray-light, $color-black);
 }
 
 @mixin usa-bgcolor-gray-lighter() {
-  @include bgcolor($color-gray-lighter, $color-black); 
+  @include bgcolor($color-gray-lighter, $color-black);
 }
 
 @mixin usa-bgcolor-gray-lightest() {
