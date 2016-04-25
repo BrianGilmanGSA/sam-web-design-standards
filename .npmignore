@@ -1,7 +1,6 @@
 # Jekyll files and directories
 #
-_*
-_site/
+/_*
 
 # Gem releases
 #
