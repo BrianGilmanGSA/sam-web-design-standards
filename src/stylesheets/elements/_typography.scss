@@ -1,12 +1,16 @@
 .usa-content {
-  ol, ul {
+  ol,
+  ul {
     max-width: $text-max-width;
   }
 }
 
-.usa-code-sample .usa-unstyled-list, .usa-accordion ul, .usa-accordion-bordered ul, .usa-footer-nav ul {
+.usa-code-sample .usa-unstyled-list,
+.usa-accordion ul,
+.usa-accordion-bordered ul,
+.usa-footer-nav ul {
   max-width: 100%;
-} 
+}
 
 
 // Background and text color combinations
@@ -32,47 +36,47 @@
 }
 
 .usa-bgcolor-primary-darker {
-  @include usa-bgcolor-primary-darker(); 
+  @include usa-bgcolor-primary-darker();
 }
 
 .usa-bgcolor-primary {
-  @include usa-bgcolor-primary();  
+  @include usa-bgcolor-primary();
 }
 
 .usa-bgcolor-cool-blue-light {
-  @include usa-bgcolor-cool-blue-light();  
+  @include usa-bgcolor-cool-blue-light();
 }
 
 .usa-bgcolor-primary-alt-darkest {
-  @include usa-bgcolor-primary-alt-darkest();  
+  @include usa-bgcolor-primary-alt-darkest();
 }
 
 .usa-bgcolor-primary-alt-dark {
-  @include usa-bgcolor-primary-alt-dark();  
+  @include usa-bgcolor-primary-alt-dark();
 }
 
 .usa-bgcolor-primary-alt {
-  @include usa-bgcolor-primary-alt();  
+  @include usa-bgcolor-primary-alt();
 }
 
 .usa-bgcolor-green {
-  @include usa-bgcolor-green();  
+  @include usa-bgcolor-green();
 }
 
 .usa-bgcolor-green-light {
-  @include usa-bgcolor-green-light();  
+  @include usa-bgcolor-green-light();
 }
 
 .usa-bgcolor-gold {
-  @include usa-bgcolor-gold();  
+  @include usa-bgcolor-gold();
 }
 
 .usa-bgcolor-gold-light {
-  @include usa-bgcolor-gold-light();    
+  @include usa-bgcolor-gold-light();
 }
 
 .usa-bgcolor-secondary-darkest {
-  @include usa-bgcolor-secondary-darkest();    
+  @include usa-bgcolor-secondary-darkest();
 }
 
 .usa-bgcolor-secondary-dark {
@@ -84,14 +88,14 @@
 }
 
 .usa-bgcolor-gray-light {
-  @include usa-bgcolor-gray-light(); 
+  @include usa-bgcolor-gray-light();
 }
 
 .usa-bgcolor-gray-lighter {
-  @include usa-bgcolor-gray-lighter(); 
+  @include usa-bgcolor-gray-lighter();
 }
 
-.usa-bgcolor-gray-lighter {
+.usa-bgcolor-gray-lightest {
   @include usa-bgcolor-gray-lightest();
 }
 

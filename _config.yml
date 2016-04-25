@@ -38,40 +38,15 @@ repos:
 
 # google_analytics_ua: UA-48605964-33
 
-sass:
-  sass_dir: _scss
+# sass:
+#   sass_dir: _scss
 #  style: :compressed
 
+# All pages are within the _docs folder
+# this makes jekyll understand that.
 collections:
-  # visual:
-  #   output: true
-  #   permalink: /:path/
-  # layout-system:
-  #   output: true
-  #   permalink: /:path/
-  # elements:
-  #   output: true
-  #   permalink: /:path/
-  # components:
-  #   output: true
-  #   permalink: /:path/
   docs:
     output: true
     permalink: /
-  navigation:
-    output: true
-    permalink: /navigation/:path/
-  form-controls:
-    output: true
-    permalink: /form-controls/:path/
-  form-templates:
-    output: true
-    permalink: /form-templates/:path/
-  search:
-    output: true
-    permalink: /search/:path/
-  other:
-    output: true
-    permalink: /other/:path/
 
 

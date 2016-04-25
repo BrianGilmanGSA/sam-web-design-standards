@@ -29,8 +29,10 @@ gulp.task(task, [ 'eslint' ], function (done) {
 
   dutil.logMessage(task, 'Compiling JavaScript');
 
+  var entries = ['src/js/start.js', 'assets/js/styleguide.js'];
+
   var defaultStream = browserify({
-    entries: 'src/js/start.js',
+    entries: entries,
     debug: true,
   });
 
@@ -38,10 +40,10 @@ gulp.task(task, [ 'eslint' ], function (done) {
     .pipe(source('components.js'))
     .pipe(buffer())
     .pipe(rename({ basename: dutil.pkg.name }))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('assets/js'));
 
   var minifiedStream = browserify({
-    entries: 'src/js/start.js',
+    entries: entries,
     debug: true,
   });
 
@@ -56,7 +58,7 @@ gulp.task(task, [ 'eslint' ], function (done) {
         suffix: '.min',
       }))
     .pipe(sourcemaps.write('.', { addComment: false }))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('assets/js'));
 
   return merge(defaultStream, minifiedStream);
 

@@ -5,6 +5,8 @@ gem 'json'
 
 gem 'rouge', '1.9'
 gem 'redcarpet'
+gem 'kramdown'
+gem 'rake'
 
 gem 'go_script'
 
