@@ -94,3 +94,5 @@
     url: 'labels'
   - text: 'Resource'
     url: 'resource'
+  - text: 'Tables'
+    url: 'tables'
