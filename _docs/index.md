@@ -36,7 +36,7 @@ title: Draft SAM Web Design Standards
 <section class="usa-section usa-section-alt">
   <div class="usa-grid">
     <div class="usa-intro">
-      <h2>Tools for creating beautiful online experiences for the American people</h2>
+      <h2>$$$ Tools for creating beautiful online experiences for the American people</h2>
       <p class="intro-text">Built and maintained by U.S. Digital Service and 18F designers and developers, this resource follows industry-standard web accessibility guidelines and reuses the best practices of existing style libraries and modern web design. It provides a guide for creating beautiful and easy-to-use online experiences for the American people.</p>
     </div>
   </div>
