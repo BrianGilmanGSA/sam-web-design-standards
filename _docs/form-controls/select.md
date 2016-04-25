@@ -138,10 +138,8 @@ title: Select
     PHP Usage
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-	
-	<pre><code>SAMUIKit\FormControls::select($config);</code></pre>
-
-	<p>Returns unescaped HTML output without instantiating an object.</p>
+<pre class="language-markup"><code class="language-markup">// Returns unescaped HTML output without instantiating an object.
+SAMUIKit\FormControls::select($config);</code></pre>
   </div>
 </div>
 
