@@ -71,7 +71,7 @@ gulp.task('delete-site-js-min-map', function() {
 }); 
 
 gulp.task('clean-assets-img', function() {
-  return del('assets/img/**/*');
+  return del(['assets/img/**/*', '!assets/img/home', '!assets/img/home/**']);
 });
 
 gulp.task('clean-assets-fonts', function() {
@@ -251,7 +251,7 @@ gulp.task(task, function (done) {
 // Wrapper task for `jekyll serve --watch` which runs after `gulp bundle-gems` to make sure
 // the gems are properly bundled.
 //
-gulp.task(taskServe, [ 'bundle-gems' ], function (done) {
+gulp.task(taskServe, [ 'bundle-gems', 'clean-assets', 'build' ], function (done) {
 
   gulp.watch([
     'assets/css/styleguide.scss',

@@ -7,7 +7,7 @@ gulp.task(task, function (done) {
   dutil.logMessage(task, 'Copying Images');
 
   var stream = gulp.src('src/img/**/*')
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('assets/img'));
 
   return stream;
 
