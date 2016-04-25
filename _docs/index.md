@@ -27,7 +27,7 @@ title: Draft SAM Web Design Standards
         <h1><span class="usa-label">Draft</span> SAM Web Design Standards</h1>
         <h2 class="usa-font-lead">An extenstion of the <a href="https://standards.usa.gov">U.S. Web Design Standards</a> with open source UI components, kits, and visual style guide to create consistency across the SAM environment</h2>
       </div>
-        <a class="usa-button usa-button-big usa-button-secondary menu-btn" href="{{ site.baseurl }}/getting-started" onclick="ga('send', 'event', 'Viewed the standards', 'Clicked View the Standards button in homepage splash');">View the standards</a>
+        <a class="usa-button usa-button-big usa-button-secondary" href="{{ site.baseurl }}/getting-started">View the standards</a>
     </div>
   </section>
 
@@ -61,7 +61,7 @@ title: Draft SAM Web Design Standards
     </div>
   </div>
   <div class="usa-grid usa-cta">
-    <a class="usa-button usa-button-secondary menu-btn" href="{{ site.baseurl }}/getting-started" onclick="ga('send', 'event', 'Viewed the standards', 'Clicked View the Standards button in homepage body');"
+    <a class="usa-button usa-button-secondary" href="{{ site.baseurl }}/getting-started"
 >View the standards</a>
   </div>
 </section>
@@ -90,7 +90,7 @@ title: Draft SAM Web Design Standards
     </div>
   </div>
   <div class="usa-grid usa-cta">
-    <a class="usa-button usa-button-secondary menu-btn" href="{{ site.baseurl }}/getting-started" onclick="ga('send', 'event', 'Viewed the standards', 'Clicked View the Standards button in homepage body');"
+    <a class="usa-button usa-button-secondary" href="{{ site.baseurl }}/getting-started"
 >View the standards</a>
   </div>
 </section>
@@ -135,7 +135,7 @@ title: Draft SAM Web Design Standards
     </div>
   </div>
   <div class="usa-grid usa-cta">
-    <a class="usa-button usa-button-secondary menu-btn" href="{{ site.baseurl }}/getting-started" onclick="ga('send', 'event', 'Viewed the standards', 'Clicked View the Standards button in homepage body');"
+    <a class="usa-button usa-button-secondary" href="{{ site.baseurl }}/getting-started"
 >View the standards</a>
   </div>
 </section>
@@ -148,7 +148,7 @@ title: Draft SAM Web Design Standards
       <p>Help us make it better.</p>
     </div>
     <div class="usa-cta">
-      <a class="usa-button usa-button-secondary menu-btn" href="{{ site.repos[0].url }}">Contribute on GitHub</a>
+      <a class="usa-button usa-button-secondary" href="{{ site.repos[0].url }}">Contribute on GitHub</a>
     </div>
     <p>Or drop us an email at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a></p>
   </div>
