@@ -55,6 +55,9 @@ collections:
   # components:
   #   output: true
   #   permalink: /:path/
+  docs:
+    output: true
+    permalink: /
   navigation:
     output: true
     permalink: /navigation/:path/
