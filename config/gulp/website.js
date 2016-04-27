@@ -10,7 +10,6 @@ var clean = require('gulp-clean');
 var task = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 var taskBuild = task + ':build';
 var taskServe = task + ':serve';
-var taskDev = task + ':development';
 
 gulp.task('clean-assets', function(done) {
   runSequence(

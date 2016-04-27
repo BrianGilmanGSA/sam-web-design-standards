@@ -58,27 +58,27 @@ gulp.task( 'default', function ( done ) {
 
   dutil.logCommand(
     'gulp sass',
-    'This task will compile all the Sass files into distribution directories.'
+    'This task will compile all the Sass files into the assets directory for local viewing.'
   );
 
   dutil.logCommand(
     'gulp javascript',
-    'This task will compile all the JavaScript files into distribution directories.'
+    'This task will compile all the JavaScript files into the assets directory for local viewing.'
   );
 
   dutil.logCommand(
     'gulp images',
-    'This task will copy all the image files into distribution directories.'
+    'This task will copy all the image files into the assets directory for local viewing.'
   );
 
   dutil.logCommand(
     'gulp fonts',
-    'This task will copy all the font files into distribution directories.'
+    'This task will copy all the font files into the assets directory for local viewing.'
   );
 
   dutil.logCommand(
     'gulp release',
-    'This task will run `gulp build` and prepare a release directory.'
+    'This task combines all fonts, images, javascripts, and Sass to a distribution directory.'
   );
 
   done();

@@ -5,12 +5,13 @@
   display: inline-block;
 
   // background
+  @include background-image(url('../img/times_circle.svg'), url('../img/times_circle.png'));
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 15px 15px;
   background-position: center center;
-  background-image: url('../img/x.png');
-  background-image: url('../img/x.svg');
+//  background-image: url('../img/x.png');
+//  background-image: url('../img/x.svg');
 
   &:hover {
     background-color: transparent;

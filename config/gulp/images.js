@@ -6,7 +6,7 @@ gulp.task(task, function (done) {
 
   dutil.logMessage(task, 'Copying Images');
 
-  var stream = gulp.src('src/img/**/*')
+  var stream = gulp.src(['node_modules/uswds/src/img/**/*', 'src/img/**/*'])
     .pipe(gulp.dest('assets/img'));
 
   return stream;
