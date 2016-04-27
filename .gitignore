@@ -21,14 +21,18 @@ npm-debug.log
 # directory though will keep being ignored for the time being.
 #
 !dist/
-dist-gem/
-dist/uswds*.zip
 
 # Ignore the .bundle directory used for bundle config & local-gem development
 #
 .bundle/
 
-# Ignore gulp-generated vendor files
+# Ignore website:serve generated files
+assets/
+!assets/css/homepage.scss
+!assets/css/prism.css
+!assets/css/styleguide.scss
+!assets/js/styleguide.js
+
 #
 src/stylesheets/lib
 #docs/assets/fonts/
