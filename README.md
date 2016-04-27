@@ -4,6 +4,61 @@ The [Draft SAM Web Design Standards](http://jbrucegsa.github.io/sam-web-design-s
 
 In addition to defining standards for HTML structure and applied CSS styles, developers for the SAM environment have created user-interface kits (UI kits) available separately to make it even easier to get up and running with developing sites that follow these standards. Further, using the UI kits allows you to quickly develop functioning user interfaces that comply with these standards and allows all of us to make global changes to the SAM environment front-end with minimal development time.
 
+## Install using Node Package Manager
+
+```$ npm install samwds```
+
+## Usage
+
+The assets will be installed to the ```node_modules``` directory of your project under ```samwds```.
+
+**Sass:**
+
+Add the following to the top of your root SCSS file:
+
+```@import '/relative/path/to/node_modules/samwds/src/stylesheets/all';```
+
+**JavaScript:**
+
+Add the following to the top of your root JS file:
+
+```require('/relative/path/to/node_modules/samwds/src/js/start.js');```
+
+**Fonts and images:**
+
+Copy the ```/node_modules/samwds/src/img``` and ```/node_modules/samwds/src/fonts``` directories to a public directory within your project.
+
+Note: It is recommended that you automate this copying using something like ```npm gulp```. This way, when you run ```npm update``` any changes to the fonts and images can be easily incorporated.
+
+## Project folder structure
+
+The folder containing your compiled CSS and JavaScript should be at the same level within your project as the ```img``` and ```fonts``` directories.
+
+Example:
+
+```
+project-root/
+├── js/
+│   └── compiled.js
+├── css/
+│   └── compiled.css
+├── img/
+└── fonts/
+```
+
+or
+
+```
+project-root/
+└── assets/
+	├── js/
+	│   └── compiled.js
+	├── css/
+	│   └── compiled.css
+	├── img/
+	└── fonts/
+```
+
 ## Download
 
 Go to our [releases page](https://github.com/jbrucegsa/sam-web-design-standards/releases) and download the samwds zip file. Add the contents of the archive into a relevant place in your code base — likely a directory where you keep third-party libraries:
