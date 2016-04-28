@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp website:serve",
     "test": "gulp eslint scss-lint",
-    "preversion": "npm test"
+    "preversion": "npm test && gulp release"
   },
   "repository": {
     "type": "git",
