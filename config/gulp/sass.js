@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var del = require('del');
 var dutil = require('./doc-util');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -25,22 +26,12 @@ gulp.task('scss-lint', function (done) {
 
 });
 
-gulp.task('copy-vendor-sass', function (done) {
-
-  dutil.logMessage('copy-vendor-sass', 'Compiling vendor CSS');
-
-  var stream = gulp.src([
-    './node_modules/normalize.css/normalize.css',
-    './node_modules/bourbon/app/assets/stylesheets/**/*.scss',
-    './node_modules/bourbon-neat/app/assets/stylesheets/**/*.scss',
-  ])
-    .pipe(normalizeCssFilter)
-      .pipe(rename('_normalize.scss'))
-    .pipe(normalizeCssFilter.restore)
-    .on('error', function (error) { console.log(error); })
-    .pipe(gulp.dest('src/stylesheets/lib'));
-
-  return stream;
+gulp.task('clean-assets-css', function(done) {
+  return del([
+    'assets/css/' + dutil.pkg.name + '.css',
+    'assets/css/' + dutil.pkg.name + '.min.css',
+    'assets/css/' + dutil.pkg.name + '.min.css.map'
+  ]);
 });
 
 gulp.task(task, [ 'scss-lint' ], function (done) {

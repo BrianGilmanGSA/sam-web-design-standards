@@ -12,20 +12,15 @@ If you have any questions or want to read more, check out the [18F Open Source P
 
 ### Submitting an issue
 
-To help us get a better understanding of the issue you are submitting, please leverage the following outline (as used in the following [Girl Develop It issue template](https://github.com/girldevelopit/gdi-new-site/issues/83)):
+While it is not necessary to use this format, it would be helpful if, when submitting an issue, it contained the following:
 
-**Description**
+**What happened**
 
 *Include a high-level description of the feature or error here including steps of how to recreate it if applicable. Include any benefits, challenges, or considerations. This can be short and sweet.*
 
-**Ask**
+**What I expected**
 
 *Describe the desired behavior and what would deem this issue, bug, or feature complete.*
-
-**To Do**
-- [ ] Steps
-- [ ] To
-- [ ] Complete/Fix
 
 **Additional Info**
 
@@ -48,20 +43,26 @@ Have questions or need help with setup? Open an issue here [https://github.com/j
 
 ### Building the project locally with gulp
 
-The Draft U.S. Web Design Standards `uswds` package (the ZIP download and the
-files needed to use the Standards on your project) and Standards website (our
-public site that displays examples of each component and the HTML code) are
-built using gulp automation. To use gulp, first make sure you've installed it on
-your machine globally.
+You've cloned the repository. Now, we just have to make sure your environment can do what it needs to. Start by opening Terminal or Command Prompt.
 
-```sh
-npm install --global gulp-cli
-```
+Confirm Ruby is installed:
+
+```$ gem -v```
+
+If you do not see a version number, [install Ruby](#)
+
+Once you have cloned the repository, ```cd``` to the directory:
+
+```$ cd ~/path/to/cloned/repo```
+
+Ensure you have Gulp installed globally:
+
+```$ npm install --global gulp-cli```
 
 Then to start, run the following command to install any new dependencies:
 
 ```sh
-npm install
+npm update
 ```
 
 The following examples detail a few tasks you'll encounter as you use gulp:
@@ -70,36 +71,30 @@ The following examples detail a few tasks you'll encounter as you use gulp:
 gulp build
 ```
 
-The task above is an alias for running `gulp sass javascript images fonts` and
-is the task to build all assets. Building the package will generate a `/dist`
-directory with the contents of the ZIP archive made available to download.
-Building just the package is useful if you'd like to create your own
-distribution bundle for frameworks that aren't supported via npm. This files in
-`/dist` contain no documentation and are compiled and bundled CSS, JavaScript,
-fonts, and images files. The command is aliased by `npm run prepublish`.
+The task above is an alias for running `gulp sass|javascript|images|fonts` and
+is the task to build all assets for the local site.
 
 ```sh
 gulp website:build
 ```
 
-The task above builds the entire Draft U.S. Web Design Standards website locally.
+The task above builds the entire Draft SAM Web Design Standards website locally.
 It can be useful when debugging for build errors or generating a deployable
 version of the Standards website. This creates a `/_site` directory that
 contains the Jekyll-built site. This is the same build step that we use to
-deploy the website. The command is aliased by `npm run deploy`.
+deploy the website.
 
 ```sh
 gulp website:serve
 ```
 
-The task above is similar to the previous `./go` serve command from earlier
-versions of the Standards. After running this command, you’ll be able to view
-the Draft U.S. Web Design Standards website locally (http://127.0.0.1:4000).
-This also sets up gulp and Jekyll to watch for file changes to the `/docs`
-and `/src` directories and rebuilds the website accordingly. The command is
-aliased by `npm start`
+After running this command, you’ll be able to view
+the Draft SAM Web Design Standards website locally (http://127.0.0.1:4000).
+This also sets up gulp and Jekyll to watch for file changes to the `/_docs`
+and `/src` directories and rebuilds the website accordingly.
 
 ### Committing files when updating the `/src` directory
+
 
 When you run `npm start` to preview the website locally, you generate many files
 that are tracked by Git. This leaves your working directory in a dirty state,

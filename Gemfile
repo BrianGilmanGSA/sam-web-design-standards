@@ -7,6 +7,4 @@ gem 'rouge', '1.9'
 gem 'kramdown'
 gem 'rake'
 
-gem 'go_script'
-
 gem 'scss_lint', require: false
