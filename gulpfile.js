@@ -7,7 +7,7 @@ require( './config/gulp/images' );
 require( './config/gulp/fonts' );
 require( './config/gulp/website' );
 require( './config/gulp/build' );
-require( './config/gulp/release' );
+// require( './config/gulp/release' );
 
 var gulp = require( 'gulp' );
 var dutil = require( './config/gulp/doc-util' );
