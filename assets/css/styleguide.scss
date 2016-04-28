@@ -9,6 +9,10 @@
 $home-text-width:      660px;
 $home-section-padding: 7.2rem;
 
+body {
+  background: red;
+}
+
 #style-home {
   p {
     font-family: $font-sans;
