@@ -10,7 +10,7 @@ If you have any questions or want to read more, check out the [18F Open Source P
 
 ## Guidelines
 
-### Submitting an issue
+### Submitting an issue or recommendation
 
 While it is not necessary to use this format, it would be helpful if, when submitting an issue, it contained the following:
 
