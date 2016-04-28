@@ -51,7 +51,7 @@ Confirm Ruby is installed:
 
 If you do not see a version number, [install Ruby](#)
 
-Once you have cloned the repository, ```cd``` to the directory:
+```cd``` to the local copy:
 
 ```$ cd ~/path/to/cloned/repo```
 
