@@ -23,7 +23,7 @@ npm-debug.log
 .bundle/
 
 # Ignore website:serve generated files except the style guide specific assets
-assets/
+/assets/
 !assets/css/homepage.scss
 !assets/css/prism.css
 !assets/css/styleguide.scss
