@@ -16,17 +16,17 @@ The assets will be installed to the ```node_modules``` directory of your project
 
 Add the following to the top of your root SCSS file:
 
-```@import '/relative/path/to/node_modules/samwds/dist/stylesheets/all';```
+```@import '/relative/path/to/node_modules/samwds/src/stylesheets/all';```
 
 **JavaScript:**
 
 Add the following to the top of your root JS file:
 
-```require('/relative/path/to/node_modules/samwds/dist/js/start.js');```
+```require('/relative/path/to/node_modules/samwds/src/js/start.js');```
 
 **Fonts and images:**
 
-Copy the ```/node_modules/samwds/dist/img``` and ```/node_modules/samwds/dist/fonts``` directories to a public directory within your project.
+Copy the ```/node_modules/samwds/src/img``` and ```/node_modules/samwds/src/fonts``` directories to a public directory within your project.
 
 Note: It is recommended that you automate this copying using something like ```npm gulp```. This way, when you run ```npm update``` any changes to the fonts and images can be easily incorporated.
 

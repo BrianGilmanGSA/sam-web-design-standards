@@ -45,48 +45,51 @@ Have questions or need help with setup? Open an issue here [https://github.com/j
 
 You've cloned the repository. Now, we just have to make sure your environment can do what it needs to. Start by opening Terminal or Command Prompt.
 
-Confirm Ruby is installed:
+#### Confirm Ruby
+
+To serve the site locally, we will need Ruby and Jekyll (installed by Ruby). Confirm Ruby is installed:
 
 ```$ gem -v```
 
-If you do not see a version number, [install Ruby](#)
+If you do not see a version number, [install RubyGems](https://rubygems.org/pages/download).
 
-Once you have cloned the repository, ```cd``` to the directory:
+We also recommend [installing bundler](http://bundler.io).
 
-```$ cd ~/path/to/cloned/repo```
+#### Confirm NPM
 
-Ensure you have Gulp installed globally:
+To install the required modules, we will need Node Package Manager (NPM). Confirm NPM is available:
+
+```$ npm -v```
+
+If you do not see a version number, [install Node.js](https://nodejs.org/en/download/).
+
+#### Confirm Gulp 
+
+To compile the site, we will need Gulp - an NPM module. Confirm Gulp is available:
+
+```$ gulp -v```
+
+If you do not see a version number, and you have confirmed NPM:
 
 ```$ npm install --global gulp-cli```
 
-Then to start, run the following command to install any new dependencies:
+#### Serve locally
 
-```sh
-npm update
-```
+If you've made it here, you are ready to go. Launch Terminal (OS X) or Command Prompt (Windows) and move to the locally cloned repository.
 
-The following examples detail a few tasks you'll encounter as you use gulp:
+```$ cd ~/path/to/cloned/repo/sam-web-design-standards```
 
-```sh
-gulp build
-```
+**Update gems:**
 
-The task above is an alias for running `gulp sass|javascript|images|fonts` and
-is the task to build all assets for the local site.
+```$ bundle update```
 
-```sh
-gulp website:build
-```
+**Update modules:**
 
-The task above builds the entire Draft SAM Web Design Standards website locally.
-It can be useful when debugging for build errors or generating a deployable
-version of the Standards website. This creates a `/_site` directory that
-contains the Jekyll-built site. This is the same build step that we use to
-deploy the website.
+```$ npm update```
 
-```sh
-gulp website:serve
-```
+**Serve the site:**
+
+```$gulp website:serve```
 
 After running this command, you’ll be able to view
 the Draft SAM Web Design Standards website locally (http://127.0.0.1:4000).
@@ -94,7 +97,6 @@ This also sets up gulp and Jekyll to watch for file changes to the `/_docs`
 and `/src` directories and rebuilds the website accordingly.
 
 ### Committing files when updating the `/src` directory
-
 
 When you run `npm start` to preview the website locally, you generate many files
 that are tracked by Git. This leaves your working directory in a dirty state,

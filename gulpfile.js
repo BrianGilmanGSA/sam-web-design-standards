@@ -76,10 +76,10 @@ gulp.task( 'default', function ( done ) {
     'This task will copy all the font files into the assets directory for local viewing.'
   );
 
-  dutil.logCommand(
-    'gulp release',
-    'This task combines all fonts, images, javascripts, and Sass to a distribution directory.'
-  );
+  // dutil.logCommand(
+  //   'gulp release',
+  //   'This task combines all fonts, images, javascripts, and Sass to a distribution directory.'
+  // );
 
   done();
 
