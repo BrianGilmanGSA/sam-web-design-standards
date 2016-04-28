@@ -23,14 +23,14 @@ fieldset {
     margin-top: 0;
   }
 
-  .usa-fieldset-inputs legend {
+  legend {
     font-size: 1.7rem;
     font-weight: 700;
   }
+}
 
-  .usa-date-of-birth input,
-  .usa-memorable-date input {
-    width: 100%;
-  }
+.usa-date-of-birth input,
+.usa-memorable-date input {
+  width: 100%;
 }
 

@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var del = require('del');
 var gutil = require('gulp-util');
 var dutil = require('./doc-util');
 var browserify = require('browserify');
@@ -23,6 +24,14 @@ gulp.task('eslint', function (done) {
     .pipe(linter('.eslintrc'))
     .pipe(linter.format());
 
+});
+
+gulp.task('clean-assets-js', function(done) {
+  return del([
+    'assets/js/' + dutil.pkg.name + '.js',
+    'assets/js/' + dutil.pkg.name + '.min.js',
+    'assets/js/' + dutil.pkg.name + '.min.js.map'
+  ]);
 });
 
 gulp.task(task, [ 'eslint' ], function (done) {

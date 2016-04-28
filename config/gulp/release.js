@@ -49,8 +49,8 @@ gulp.task(task, function (done) {
   dutil.logMessage(task, 'Creating distribution directory');
 
   runSequence(
+    'clean-dist',
     [
-      'clean-dist',
       'dist-fonts',
       'dist-javascript',
       'dist-sass',
