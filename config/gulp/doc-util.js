@@ -65,6 +65,8 @@ module.exports = {
 
   },
 
+  serveDestName: 'styleguide',
+
   dirName: pkg.name + '-' + pkg.version,
 
   logIntroduction: function (message) {

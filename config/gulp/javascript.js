@@ -28,9 +28,9 @@ gulp.task('eslint', function (done) {
 
 gulp.task('clean-assets-js', function(done) {
   return del([
-    'assets/js/' + dutil.pkg.name + '.js',
-    'assets/js/' + dutil.pkg.name + '.min.js',
-    'assets/js/' + dutil.pkg.name + '.min.js.map'
+    'assets/js/' + dutil.serveDestName + '.js',
+    'assets/js/' + dutil.serveDestName + '.min.js',
+    'assets/js/' + dutil.serveDestName + '.min.js.map'
   ]);
 });
 
@@ -38,7 +38,7 @@ gulp.task(task, [ 'eslint' ], function (done) {
 
   dutil.logMessage(task, 'Compiling JavaScript');
 
-  var entries = ['src/js/start.js', 'assets/js/styleguide.js'];
+  var entries = ['src/js/start.js', 'assets/js/start.js'];
 
   var defaultStream = browserify({
     entries: entries,
@@ -48,7 +48,7 @@ gulp.task(task, [ 'eslint' ], function (done) {
   defaultStream = defaultStream.bundle()
     .pipe(source('components.js'))
     .pipe(buffer())
-    .pipe(rename({ basename: dutil.pkg.name }))
+    .pipe(rename({ basename: dutil.serveDestName }))
     .pipe(gulp.dest('assets/js'));
 
   var minifiedStream = browserify({
@@ -63,7 +63,7 @@ gulp.task(task, [ 'eslint' ], function (done) {
       .pipe(uglify())
       .on('error', gutil.log)
       .pipe(rename({
-        basename: dutil.pkg.name,
+        basename: dutil.serveDestName,
         suffix: '.min',
       }))
     .pipe(sourcemaps.write('.', { addComment: false }))

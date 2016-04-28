@@ -99,7 +99,7 @@ gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
   });
 
   gulp.watch([
-    'assets/js/styleguide.js',
+    'assets/js/start.js',
     'src/js/**/*.js',
     '!src/js/vendor/**/*',
   ], function (event) {

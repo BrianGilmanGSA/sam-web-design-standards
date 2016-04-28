@@ -30,8 +30,6 @@
 
     {% include scripts.html %}
 
-    <script src="{{ site.baseurl }}/assets/js/vendor/uswds.min.js"></script>
-
   </body>
 
 </html>

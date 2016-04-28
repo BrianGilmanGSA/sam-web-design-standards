@@ -28,9 +28,9 @@ gulp.task('scss-lint', function (done) {
 
 gulp.task('clean-assets-css', function(done) {
   return del([
-    'assets/css/' + dutil.pkg.name + '.css',
-    'assets/css/' + dutil.pkg.name + '.min.css',
-    'assets/css/' + dutil.pkg.name + '.min.css.map'
+    'assets/css/' + dutil.serveDestName + '.css',
+    'assets/css/' + dutil.serveDestName + '.min.css',
+    'assets/css/' + dutil.serveDestName + '.min.css.map'
   ]);
 });
 
@@ -45,7 +45,7 @@ gulp.task(task, [ 'scss-lint' ], function (done) {
       sass({ outputStyle: 'expanded' })
         .on('error', sass.logError)
     )
-    .pipe(rename({ basename: dutil.pkg.name }))
+    .pipe(rename({ basename: dutil.serveDestName }))
     .pipe(gulp.dest('assets/css'));
 
   var minifiedStream = gulp.src(entryFile)
@@ -55,7 +55,7 @@ gulp.task(task, [ 'scss-lint' ], function (done) {
           .on('error', sass.logError)
       )
       .pipe(rename({
-        basename: dutil.pkg.name,
+        basename: dutil.serveDestName,
         suffix: '.min',
       }))
     .pipe(sourcemaps.write('.', { addComment: false }))
