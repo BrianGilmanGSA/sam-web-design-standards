@@ -4,9 +4,6 @@
 /assets/
 /config/
 
-# dist is for npm - src is for git
-/src/
-
 # Configuration and scripts
 #
 .editorconfig
