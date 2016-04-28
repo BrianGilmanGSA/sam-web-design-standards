@@ -18,7 +18,3 @@ Gemfile.lock
 gulpfile.js
 .sass-cache/
 .bundle/
-
-# Ensure that src and dist are published
-#
-!src/
