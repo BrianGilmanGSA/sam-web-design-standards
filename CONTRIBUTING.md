@@ -89,66 +89,25 @@ If you've made it here, you are ready to go. Launch Terminal (OS X) or Command P
 
 **Serve the site:**
 
-```$gulp website:serve```
+```$ gulp website:serve```
 
-After running this command, you’ll be able to view
+After running this command, you should be able to view
 the Draft SAM Web Design Standards website locally (http://127.0.0.1:4000).
-This also sets up gulp and Jekyll to watch for file changes to the `/_docs`
-and `/src` directories and rebuilds the website accordingly.
+This also sets up gulp and Jekyll to watch for file changes; so, as you update files, you should only need to refresh your browser.
 
-### Committing files when updating the `/src` directory
+**What do I change?**
 
-When you run `npm start` to preview the website locally, you generate many files
-that are tracked by Git. This leaves your working directory in a dirty state,
-and it can make knowing which files to include in your commit seem like a
-daunting task. The following steps will make it easier for you to commit changes
-while the team looks into different approaches for handling changes to the
-Standards website and the `uswds` package.
+Anything. It will be up to the core team for the project to determine whether to integrate the changes. Having said that:
 
-If you made any changes to the `/src` directory, you have also made changes in
-the following directories:
+1. The ```/src``` directory contains the Sass, JavaScript, image files, and fonts for the SAM environment and is the main entry point for displaying the Standards locally. Therefore, any changes to these files should be done in the spirit of recommendations to be applied to the SAM environment as a whole.
+1. The ```/_docs``` contains all the pages for the Standards and is what you will edit to describe and demonstrate proposed change(s).
+1. If you're feeling adventurous - all other files help to display the Standards, but do not affect the content of the Standards or the module for others.
 
-```
-docs/_scss/
-docs/assets/img/
-docs/assets/fonts/
-docs/assets/js/vendor/
-```
+**Have fun!**
 
-This is due to how the Standards website consumes the `uswds` package.
+Don't worry about breaking anything in the approved version. Until it is committed, merged, and release you can do whatever you want! Try different styles, HTML structures, and so on. 
 
-Changes may also appear in these directories and files, if you've made any
-changes to `/src`.
-
-```
-dist/css/
-dist/js/
-dist/fonts/
-dist/img/
-```
-
-These changes must be committed in order for our distribution directories and
-Standards website to remain in sync with the `uswds` package. Please keep
-changes in a directory within its own series of commits. The commit messages
-below are examples.
-
-```sh
-git add src/ && \
-git commit -m "Update the src files"
-
-git add docs/ && \
-git commit -m "Update the Standards website"
-
-git add dist && \
-git commit -m "Update the dist directory"
-```
-
-Because this will produce three commits, the only commits that may be reviewed
-are the commits to the `/src` directory. This only applies to contributions that
-are done solely on the `/src` directory. If any contributions are added to the
-Standards website, the `/docs` directory will also be reviewed. The contents of
-the `/dist` directory is generated automatically, so commits may not need a
-review.
+Go. Play!
 
 ## Licenses and attribution
 
