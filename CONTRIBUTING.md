@@ -99,7 +99,7 @@ To update to latest versions: ```$ bundle update```
 ```$ gulp website:serve```
 
 After running this command, you should be able to view
-the Draft SAM Web Design Standards website locally (http://127.0.0.1:4000).
+the Standards website locally (http://127.0.0.1:4000).
 
 This also sets up gulp and Jekyll to watch for file changes; so, as you update files, you should only need to refresh your browser.
 
