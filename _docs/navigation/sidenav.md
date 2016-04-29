@@ -115,7 +115,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page. Note: W
     PHP Usage
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-<pre><code>// render unescaped HTML string
+<pre><code class="language-php">// render unescaped HTML string
 echo SAMUIKit\Navigation::sideNavigation($config)</code></pre>
   </div>
 </div>

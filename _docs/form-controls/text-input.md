@@ -38,8 +38,8 @@ lead: See <a href="https://playbook.cio.gov/designstandards/form-controls/#text-
       aria-expanded="false" aria-controls="collapsible-0">
     PHP Usage
   </button>
-  <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-<pre><code>// render unescaped HTML
+  <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content usa-code-sample">
+<pre><code class="language-php">// render unescaped HTML
 echo SAMUIKit\FormControls::textInput($config);
 
 // render multiple text inputs

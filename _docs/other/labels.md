@@ -25,7 +25,7 @@ lead: See <a href="https://standards.usa.gov/labels/">US Web Design Standards</a
     PHP Usage
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-<pre><code>// render unescaped HTML string
+<pre><code class="language-php">// render unescaped HTML string
 echo SAMUIKit\Other::label($config)</code></pre>
   </div>
 </div>

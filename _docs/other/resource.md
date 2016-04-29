@@ -55,7 +55,7 @@ lead: A resource displays content and metadata related to single object. Ex. Art
     PHP Usage
   </button>
   <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-<pre><code>// render unescaped HTML string
+<pre><code class="language-php">// render unescaped HTML string
 echo SAMUIKit\Other::resource($config);
 
 // render the third example

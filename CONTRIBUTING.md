@@ -52,7 +52,13 @@ To serve the site locally, we will need Ruby and Jekyll (installed by Ruby). Con
 
 If you do not see a version number, [install RubyGems](https://rubygems.org/pages/download).
 
-We also recommend [installing bundler](http://bundler.io).
+#### Confirm Ruby Bundler
+
+```$ bundle -v```
+
+If you do not see a version number, and you have confirmed Ruby:
+
+```$ gem install bundler```
 
 #### Confirm NPM
 
@@ -107,7 +113,7 @@ Having said that:
 
 **Have fun!**
 
-Don't worry about breaking anything in the approved version. Until it is committed, merged, and release you can do whatever you want! Try different styles, HTML structures, and so on. 
+Don't worry about breaking anything in the approved version. Until it is committed, merged, and released you can do whatever you want! Try different styles, HTML structures, and so on. 
 
 Go. Play!
 
