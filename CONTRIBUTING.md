@@ -105,7 +105,7 @@ the Standards website locally (http://127.0.0.1:4000).
 
 This also sets up gulp and Jekyll to watch for file changes; so, as you update files, you should only need to refresh your browser.
 
-Note: If you would like to see a list of available gulp commands, just use:
+Note: For a list of available gulp commands use:
 
 ```$ gulp```
 
