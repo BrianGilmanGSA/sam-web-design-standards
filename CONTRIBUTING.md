@@ -86,9 +86,11 @@ If you've made it here, you are ready to go. Launch Terminal (OS X) or Command P
 
 **Update gems:**
 
-```$ bundle update```
+First time: ```$ bundle install```
 
-**Update modules:**
+To update to latest versions: ```$ bundle update```
+
+**Update node modules:**
 
 ```$ npm update```
 
