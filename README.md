@@ -16,13 +16,17 @@ The assets will be installed to the ```node_modules``` directory of your project
 
 Add the following to the top of your root SCSS file:
 
-```@import '/relative/path/to/node_modules/samwds/src/stylesheets/all';```
+```
+@import '/relative/path/to/node_modules/samwds/src/stylesheets/all';
+```
 
 **JavaScript:**
 
 Add the following to the top of your root JS file:
 
-```require('/relative/path/to/node_modules/samwds/src/js/start.js');```
+```
+require('/relative/path/to/node_modules/samwds/src/js/start.js');
+```
 
 **Fonts and images:**
 
