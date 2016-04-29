@@ -93,11 +93,14 @@ If you've made it here, you are ready to go. Launch Terminal (OS X) or Command P
 
 After running this command, you should be able to view
 the Draft SAM Web Design Standards website locally (http://127.0.0.1:4000).
+
 This also sets up gulp and Jekyll to watch for file changes; so, as you update files, you should only need to refresh your browser.
 
 **What do I change?**
 
-Anything. It will be up to the core team for the project to determine whether to integrate the changes. Having said that:
+Anything. It will be up to the core team for the SAM Web Design Standards to determine whether to integrate the changes. 
+
+Having said that:
 
 1. The ```/src``` directory contains the Sass, JavaScript, image files, and fonts for the SAM environment and is the main entry point for displaying the Standards locally. Therefore, any changes to these files should be done in the spirit of recommendations to be applied to the SAM environment as a whole.
 1. The ```/_docs``` contains all the pages for the Standards and is what you will edit to describe and demonstrate proposed change(s).
