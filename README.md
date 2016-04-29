@@ -22,7 +22,7 @@ Add the following to the top of your root SCSS file:
 
 Add the following to the top of your root JS file:
 
-```require('/relative/path/to/node_modules/samwds/src/js/start.js');```
+require('/relative/path/to/node_modules/samwds/src/js/start.js');
 
 **Fonts and images:**
 
