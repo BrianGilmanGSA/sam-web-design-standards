@@ -78,7 +78,7 @@ If you do not see a version number, and you have confirmed NPM:
 
 ```$ npm install --global gulp-cli```
 
-#### Serve locally
+#### Serve the site locally
 
 If you've made it here, you are ready to go. Launch Terminal (OS X) or Command Prompt (Windows) and move to the locally cloned repository.
 
