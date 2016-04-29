@@ -42,7 +42,9 @@ Have questions or need help with setup? Open an issue here [https://github.com/j
 
 ### Building the project locally with gulp
 
-You've cloned the repository. Now, we just have to make sure your environment can do what it needs to. Start by opening Terminal or Command Prompt.
+You've cloned the repository. Now, we just have to make sure your environment can do what it needs to in order to serve the site locally. 
+
+Start by opening Terminal (OS X) or Command Prompt (Windows).
 
 #### Confirm Ruby
 
@@ -102,6 +104,10 @@ After running this command, you should be able to view
 the Standards website locally (http://127.0.0.1:4000).
 
 This also sets up gulp and Jekyll to watch for file changes; so, as you update files, you should only need to refresh your browser.
+
+Note: If you would like to see a list of available gulp commands, just use:
+
+```$ gulp```
 
 **What do I change?**
 
