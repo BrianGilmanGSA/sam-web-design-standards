@@ -46,7 +46,7 @@ You've cloned the repository. Now, we just have to make sure your environment ca
 
 #### Confirm Ruby
 
-To serve the site locally, we will need Ruby and Jekyll (installed by Ruby). Confirm Ruby is installed:
+To serve the site locally, we will need Ruby. Confirm Ruby is installed:
 
 ```$ gem -v```
 
