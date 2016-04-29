@@ -84,13 +84,13 @@ If you've made it here, you are ready to go. Launch Terminal (OS X) or Command P
 
 ```$ cd ~/path/to/cloned/repo/sam-web-design-standards```
 
-**Update gems:**
+**Update gems (this could take a moment):**
 
 First time: ```$ bundle install```
 
 To update to latest versions: ```$ bundle update```
 
-**Update node modules:**
+**Update node modules (this could take a moment, especially the first time):**
 
 ```$ npm update```
 
