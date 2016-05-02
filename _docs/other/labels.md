@@ -1,5 +1,5 @@
 ---
-permalink: /other/labels/
+permalink: /components/other/labels/
 layout: styleguide
 type: component
 title: Labels

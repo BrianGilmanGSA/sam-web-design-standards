@@ -1,5 +1,5 @@
 ---
-permalink: /other/contextual_help/
+permalink: /components/other/contextual_help/
 layout: styleguide
 type: component
 title: Contextual Help

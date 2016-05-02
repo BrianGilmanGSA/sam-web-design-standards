@@ -1,5 +1,5 @@
 ---
-permalink: /search/search-result/
+permalink: /components/search/search-result/
 layout: styleguide
 type: component
 title: Search result

@@ -1,5 +1,5 @@
 ---
-permalink: /form-templates/login-form/
+permalink: /components/form-templates/login-form/
 layout: styleguide
 type: component
 title: Sign-in form

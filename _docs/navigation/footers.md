@@ -1,5 +1,5 @@
 ---
-permalink: /navigation/footers/
+permalink: /components/navigation/footers/
 layout: styleguide
 type: component
 title: Footers

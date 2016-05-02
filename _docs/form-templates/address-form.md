@@ -1,5 +1,5 @@
 ---
-permalink: /form-templates/address-form/
+permalink: /components/form-templates/address-form/
 layout: styleguide
 type: component
 title: Address Form

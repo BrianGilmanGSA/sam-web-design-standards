@@ -1,5 +1,5 @@
 ---
-permalink: /form-controls/state-select/
+permalink: /components/form-controls/state-select/
 layout: styleguide
 type: element
 title: State Select

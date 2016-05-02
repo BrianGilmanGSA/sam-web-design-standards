@@ -1,5 +1,5 @@
 ---
-permalink: /navigation/header/
+permalink: /components/navigation/header/
 layout: styleguide
 type: component
 title: Header

@@ -1,5 +1,5 @@
 ---
-permalink: /other/
+permalink: /components/other/
 layout: styleguide
 type: component
 title: Other
