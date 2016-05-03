@@ -1,5 +1,5 @@
 ---
-permalink: /other/actions/
+permalink: /components/other/actions/
 layout: styleguide
 type: component
 title: Actions

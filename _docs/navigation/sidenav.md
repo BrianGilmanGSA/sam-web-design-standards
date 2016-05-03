@@ -1,5 +1,5 @@
 ---
-permalink: /navigation/sidenav/
+permalink: /components/navigation/sidenav/
 layout: styleguide
 type: component
 title: Side navigation

@@ -1,5 +1,5 @@
 ---
-permalink: /other/accordions/
+permalink: /components/other/accordions/
 layout: styleguide
 type: component
 title: Accordions

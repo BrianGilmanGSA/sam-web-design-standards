@@ -1,5 +1,5 @@
 ---
-permalink: /navigation/
+permalink: /components/navigation/
 layout: styleguide
 type: component
 title: Navigation

@@ -1,5 +1,5 @@
 ---
-permalink: /form-templates/
+permalink: /components/form-templates/
 layout: styleguide
 type: component
 title: Form templates

@@ -1,5 +1,5 @@
 ---
-permalink: /form-templates/name-form/
+permalink: /components/form-templates/name-form/
 layout: styleguide
 type: component
 title: Name Form
