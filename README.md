@@ -1,6 +1,6 @@
 # Draft SAM Web Design Standards
 
-The [Draft SAM Web Design Standards](http://jbrucegsa.github.io/sam-web-design-standards/) extend the [Draft U.S. Web Design Standards](https://playbook.cio.gov/designstandards), which include a library of open source UI components and visual style guide for U.S. federal government websites.
+The [Draft SAM Web Design Standards](http://briangilmangsa.github.io/sam-web-design-standards/) extend the [Draft U.S. Web Design Standards](https://playbook.cio.gov/designstandards), which include a library of open source UI components and visual style guide for U.S. federal government websites.
 
 In addition to defining standards for HTML structure and applied CSS styles, developers for the SAM environment have created user-interface kits (UI kits) available separately to make it even easier to get up and running with developing sites that follow these standards. Further, using the UI kits allows you to quickly develop functioning user interfaces that comply with these standards and allows all of us to make global changes to the SAM environment front-end with minimal development time.
 
@@ -79,15 +79,15 @@ public-root/
 
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
 
-[https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
+[https://github.com/BrianGilmanGSA/sam-web-design-standards/issues](https://github.com/BrianGilmanGSA/sam-web-design-standards/issues).
 
 You can also email us directly at uswebdesignstandards@gsa.gov.
 
 ## Contributing to the code base
 
-For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/18F/web-design-standards/blob/18f-pages-staging/CONTRIBUTING.md). These instructions also include guidance on how to set up your own copy of the Standards style guide website for development.
+For complete instructions on how to contribute code, please read [CONTRIBUTING](CONTRIBUTING.md). These instructions also include guidance on how to set up your own copy of the Standards style guide website for development.
 
-If you have questions or concerns about our contributing workflow, please contact us by [filing a GitHub issue](https://github.com/18F/web-design-standards/issues) or [emailing our team](mailto:uswebdesignstandards@gsa.gov).
+If you have questions or concerns about our contributing workflow, please contact us by [filing a GitHub issue](https://github.com/BrianGilmanGSA/sam-web-design-standards/issues) or ...emailing our team... .
 
 ## Reuse of open-source style guides
 
