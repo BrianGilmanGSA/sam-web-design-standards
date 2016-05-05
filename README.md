@@ -4,6 +4,22 @@ The [Draft SAM Web Design Standards](http://jbrucegsa.github.io/sam-web-design-s
 
 In addition to defining standards for HTML structure and applied CSS styles, developers for the SAM environment have created user-interface kits (UI kits) available separately to make it even easier to get up and running with developing sites that follow these standards. Further, using the UI kits allows you to quickly develop functioning user interfaces that comply with these standards and allows all of us to make global changes to the SAM environment front-end with minimal development time.
 
+## What do I get?
+
+**From the SAM Web Design Standards:**
+
+You get access to Sass files and HTML structures for UI Components specific to the SAM environment.
+
+Beyond that, you get access to all the resources available from the U.S. Web Design Standards module as well.
+
+**From the U.S. Web Design Standards:**
+
+The U.S. Web Design Standards include Sass, HTML structures, and JavaScript, including:
+
+1. [Bourbon](http://bourbon.io) functions.
+2. [Bourbon-neat](http://neat.bourbon.io): Use the U.S. Web Design Standards classes for the [grid](https://standards.usa.gov/grids/).
+3. [jQuery](http://jquery.com): Required for the U.S. Web Design Standards [Accordions UI Component](https://standards.usa.gov/accordions/). Can be used for AJAX requests and other DOM manupulation.
+
 ## Install using Node Package Manager
 
 ```$ npm install samwds```
