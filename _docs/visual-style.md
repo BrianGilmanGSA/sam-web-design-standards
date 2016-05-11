@@ -2,8 +2,15 @@
 permalink: /visual-style/
 title: Visual Style
 layout: styleguide
-lead: See <a href="https://standards.usa.gov/visual-style">US Web Design Standards</a> for overarching design considerations.
+lead: See <a href="https://standards.usa.gov/visual-style">US Web Design Standards</a> for design considerations.
 ---
+
+<p>Specifically, use the US Web Design Standards for:</p>
+
+<ul>
+  <li><a href="https://standards.usa.gov/visual-style/#typesetting">Typesetting</a></li>
+  <li><a href="https://standards.usa.gov/visual-style/#lists">Lists</a></li>
+</ul>
 
 <h2 class="usa-heading" id="logo-and-usage">Logo and Usage</h2>
 
@@ -12,6 +19,8 @@ lead: See <a href="https://standards.usa.gov/visual-style">US Web Design Standar
 <h2 class="usa-heading" id="typography">Typography</h2>
 
 The Standards use the Source Sans Pro [pairing and style](https://playbook.cio.gov/designstandards/visual-style/#pairings) defined by the U.S. Web Design Standards.
+
+{% include typography.md %}
 
 <h2 class="usa-heading" id="imagery">Imagery</h2>
 
