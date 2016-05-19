@@ -10,24 +10,69 @@ $home-text-width:      660px;
 $home-section-padding: 7.2rem;
 
 #style-home {
-  p {
-    font-family: $font-sans;
-    font-size: 1.7rem;
-  }
 
-  #main p:first-child {
+  .skip {
+    margin: 0;
+    padding:0;
+  }
+/*
+  #main p {
     margin: 0;
     padding: 0;
   }
-
-  .usa-button-secondary:visited {
+*/
+  .usa-banner {
+    background-color: $iae-color-primary;
+    background-image: none;
     color: $color-white;
   }
 
+  .usa-banner-content {
+    margin: 0 auto;
+    padding-top: 5rem;
+    text-align: center;
+    font-size: $h2-font-size;
+    font-weight: 300;
+
+    h1 {
+      margin-top: 1rem;
+      font-size: $h1-font-size;
+      color: $color-white;
+      font-weight: 300;
+    }
+
+    b {
+      font-weight: 400;
+    }
+
+    .usa-button {
+      margin: 5rem auto;
+    }
+  }
+
+  .usa-grid {
+    .usa-width-one-third blockquote {
+      margin: 0;
+      padding-left: 0;
+      padding-bottom: 1rem;
+      border-top: solid 4px $iae-color-gray;
+      border-left: none;
+    }
+
+  }
+
+
+/*
+  .usa-button-secondary:visited {
+    color: $color-white;
+  }
+*/
+/*
   .usa-intro {
     max-width: $home-text-width;
   }
-
+*/
+/*
   .usa-section-examples {
     @include media($medium-screen) {
       .usa-width-five-sixths {
@@ -35,11 +80,12 @@ $home-section-padding: 7.2rem;
       }
     }
   }
-
+*/
+/*
   .usa-section {
     @include padding($home-section-padding null);
   }
-
+/*
   .usa-button-block {
     @include media($medium-screen) {
       width: auto;
@@ -48,7 +94,8 @@ $home-section-padding: 7.2rem;
     vertical-align: top;
     width: 100%;
   }
-
+*/
+/*
   .usa-banner {
     @include media ($medium-screen) {
       background-image: url("../img/home/homepage_illustrations_flag_cropped_2x.png");
@@ -90,7 +137,8 @@ $home-section-padding: 7.2rem;
       margin-right: 0;
     }
   }
-
+*/
+/*
   .usa-banner-link-top {
     color: $color-white;
     float: right;
@@ -100,15 +148,13 @@ $home-section-padding: 7.2rem;
       color: $color-white;
     }
   }
-
-  .usa-banner-content {
-    max-width: 48rem;
-  }
-
+*/
+/*
   .usa-section-alt {
     background-color: $color-gray-lightest;
   }
-
+*/
+/*
   .usa-section-dark {
     background-color: $color-gray-dark;
     color: $color-white;
@@ -125,7 +171,8 @@ $home-section-padding: 7.2rem;
       }
     }
   }
-
+*/
+/*
   .usa-img-secondary {
     text-align: center;
 
@@ -133,11 +180,13 @@ $home-section-padding: 7.2rem;
       width: 260px;
     }
   }
-
+*/
+/*
   .usa-circle-block img {
     width: 124px;
   }
-
+*/
+/*
   @include media($medium-screen) {
     .usa-img-circle {
       float: left;
@@ -153,22 +202,26 @@ $home-section-padding: 7.2rem;
       overflow: hidden;
     }
   }
-
+*/
+/*
   .usa-circle-block {
     text-align: center;
   }
-
+*/
+/*
   .usa-standlast {
     p {
       font-size: $h3-font-size;
     }
   }
-
+*/
+/*
   .usa-example-heading {
     font-weight: $font-normal;
     @include margin(0 null 1.6rem);
   }
-
+*/
+/*
   .usa-section-examples {
     .usa-cta {
       margin-bottom: 1.6rem;
@@ -183,43 +236,51 @@ $home-section-padding: 7.2rem;
       }
     }
   } 
-
+*/
+/*
   h1, h2, h3, h4, h5, h6 {
     color: $color-primary-darker;
     font-family: $font-serif;
   }
-
+*/
+/*
   h1, h2 {
     margin-top: 0;
   }
-
+*/
+/*
   .usa-font-lead {
     color: $color-gray-dark;
     font-weight: 300;
     margin-bottom: 5rem;
   }
-
+*/
+/*
   .intro-text {
     font-family: $font-serif;
     line-height: $lead-line-height;
     margin-bottom: 4rem;
   }
-
+*/
+/*
   a,
   a:hover {
     border-bottom: 0;
   }
-
+*/
+/*
   a {
     > h3,
     &:visited  {
       color: $color-primary;
     }
   }
-
+*/
+/*
   .usa-button-secondary a:visited {
     color: $color-white;
   }
+*/
 }
 
 // Begin uswds styleguide.scss
@@ -229,13 +290,13 @@ $home-section-padding: 7.2rem;
 $styleguide-width-nav-sidebar:  250px;
 $styleguide-color-grid-dark:    #727272;
 $styleguide-color-grid-light:   #e3e4e5;
-$styleguide-site-top:           124px;
+$styleguide-site-top:           164px;
 
 // Navigation ------------- //
 
 #styleguide {
   .usa-site-header {
-    @include position(fixed, 0 null null 0);
+    //@include position(fixed, 0 null null 0);
     background-color: $color-white;
     border-bottom: 1px solid $color-gray-light;
     width: 100%;
@@ -249,8 +310,9 @@ $styleguide-site-top:           124px;
       @include media($medium-screen + $styleguide-width-nav-sidebar) {
         @include margin(2.7rem 0 1rem);
         height: 6rem;
+        background-color: black;
       }
-      margin-top: 4px;
+      //margin-top: 4px;
 
       .logo {
         @include media($medium-screen + $styleguide-width-nav-sidebar) {
@@ -394,13 +456,17 @@ $styleguide-site-top:           124px;
   // Sidebar Nav --------- //
 
   .sidenav {
-    @include position(fixed, $styleguide-site-top null 0 0);
+    @include position(absolute, $styleguide-site-top null 0 10rem);
     width: $styleguide-width-nav-sidebar;
-    border-right: 1px solid $color-gray-light;
-    padding: 5rem 3rem 3rem 3rem;
+    //border-right: 1px solid $color-gray-light;
+    padding: 0rem 3rem 0rem 0rem;
     overflow: auto;
     display: none;
-    z-index: -1;
+    //z-index: -1;
+
+    &.fixed {
+      @include position(fixed, 5em null 0 10rem);
+    }
 
     .lt-ie9 & {
       width: 25%;
@@ -481,7 +547,7 @@ $styleguide-site-top:           124px;
   }
 
   // Footer --------------- //
-
+/*
   .usa-styleguide-footer {
     background-color: $color-primary-darker;
     @include padding(3rem null);
@@ -498,7 +564,7 @@ $styleguide-site-top:           124px;
       @include margin(0 null 1.5rem);
     }
   }
-
+*/
   // Pattern Preview Boxes -------- //
 
   .preview {
@@ -671,11 +737,11 @@ $styleguide-site-top:           124px;
   .button_wrapper-dark {
     background: #323a45
   }
-
+/*
   .usa-heading {
     color: $color-primary-darker;
   }
-
+*/
   // Colors -------------- //
 
   .usa-color-short {

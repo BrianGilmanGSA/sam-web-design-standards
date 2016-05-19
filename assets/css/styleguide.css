@@ -4189,7 +4189,9 @@ select.usa-input-success {
   right: 1.9rem;
 }
 
-.usa-input-error input {
+.usa-input-error input,
+.usa-input-error textarea,
+.usa-input-error select {
   border: 3px solid #cd2026;
   width: calc(100% + 1.5rem);
 }
@@ -5693,6 +5695,36 @@ fieldset.usa-fieldset-inputs legend {
   margin-right: 1rem;
 }
 
+.iae-button-primary,
+.iae-button-primary:visited {
+  background-color: #003264;
+  color: #ffffff;
+}
+
+.iae-button-primary:hover {
+  background-color: #001931;
+}
+
+.iae-button-primary-alt,
+.iae-button-primary-alt:visited {
+  background-color: #004b7d;
+}
+
+.iae-button-primary-alt:hover {
+  background-color: #002c4a;
+}
+
+.iae-button-gray,
+.iae-button-gray:visited {
+  background-color: #e1e1e1;
+  color: #000000;
+}
+
+.usa-button.iae-button-gray:hover {
+  background-color: #c8c8c8;
+  color: #000000;
+}
+
 .usa-content ol,
 .usa-content ul {
   max-width: 53rem;
@@ -5703,6 +5735,19 @@ fieldset.usa-fieldset-inputs legend {
 .usa-accordion-bordered ul,
 .usa-footer-nav ul {
   max-width: 100%;
+}
+
+h1 {
+  color: #003264;
+}
+
+h2 {
+  color: #004b7d;
+}
+
+blockquote {
+  border-left: solid 4px #e1e1e1;
+  padding-left: 2rem;
 }
 
 .usa-bgcolor-base {
@@ -5904,226 +5949,535 @@ fieldset.usa-fieldset-inputs legend {
   border-bottom: 1px solid #000000;
 }
 
-.usa-sidenav-list a {
-  line-height: 1.25em;
+.iae-primary-navigation {
+  background: #003264;
 }
 
-#style-home p {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1.7rem;
-}
-
-#style-home #main p:first-child {
+.iae-primary-navigation ul {
+  display: block;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-#style-home .usa-button-secondary:visited {
-  color: #ffffff;
+.iae-primary-navigation ul li {
+  display: list-item;
+  margin: 0;
 }
 
-#style-home .usa-intro {
-  max-width: 660px;
+.iae-primary-navigation ul li:before {
+  display: none;
 }
 
-@media screen and (min-width: 600px) {
-  #style-home .usa-section-examples .usa-width-five-sixths {
-    margin-left: 8.5298%;
-  }
+.iae-primary-navigation ul li:after {
+  display: none;
 }
 
-#style-home .usa-section {
-  padding-top: 7.2rem;
-  padding-bottom: 7.2rem;
-}
-
-#style-home .usa-button-block {
+.iae-primary-navigation .iae-click-nav > a {
+  position: relative;
   display: inline-block;
-  vertical-align: top;
+  margin: 12px 5px 5px 0;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/grid-white.svg"), url("../img/grid-white.png");
+  background-image: url("../img/grid-white.svg"), url("../img/grid-white.png");
+  background-color: #003264;
+  background-size: 22px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-primary-navigation .iae-click-nav > a {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.iae-primary-navigation .iae-click-nav {
+  width: 50px;
+}
+
+.iae-primary-navigation .iae-click-nav ul {
+  position: absolute;
+  z-index: 1000;
+  left: -1000px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.iae-primary-navigation .iae-click-nav ul li a {
+  display: inline-block;
   width: 100%;
+  padding: 10px;
+}
+
+.iae-primary-navigation .iae-click-nav:hover ul {
+  background-color: #ffffff;
+  left: 10px;
+  top: 90px;
 }
 
 @media screen and (min-width: 600px) {
-  #style-home .usa-button-block {
-    width: auto;
+  .iae-primary-navigation .iae-click-nav:hover ul {
+    left: 20px;
+    top: 95px;
   }
 }
 
-#style-home .usa-banner {
-  background-color: #112e51;
-  background-image: none;
+.iae-home {
+  display: inline-block;
+  font-size: 1.7rem;
+  position: absolute;
+  left: 51px;
+  top: 50px;
+  font-weight: 200;
+}
+
+.iae-home strong {
+  font-weight: 500;
+}
+
+.iae-home a,
+.iae-home a:visited {
   color: #ffffff;
-  padding-top: 2rem;
-  padding-bottom: 3.7rem;
 }
 
 @media screen and (min-width: 600px) {
-  #style-home .usa-banner {
-    background-image: url("../img/home/homepage_illustrations_flag_cropped_2x.png");
-    background-position: right bottom;
+  .iae-home {
+    font-size: 3rem;
+    top: 42px;
+    left: 66px;
+  }
+}
+
+.iae-right-nav {
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-right-nav {
+    top: 39px;
+  }
+}
+
+.iae-secondary-navigation {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  /*
+  .iae-click-nav > a {
+    position: relative;
+    display: inline-block;
+    margin: 12px 5px 5px 0;
+    width: 44px;
+    height: 44px;
+    @include background-image(url('../img/grid-white.svg'), url('../img/grid-white.png'));
+    background-color: $iae-color-primary;
+    background-size: 22px;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 582px auto;
+
+    @include media($medium-screen) {
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+    }
   }
-}
 
-#style-home .usa-banner .usa-label, #style-home .usa-banner .usa-label-big {
-  display: table;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-
-#style-home .usa-banner .usa-font-lead {
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-#style-home .usa-banner h1 {
-  color: #ffffff;
-  padding-top: 1.5rem;
-}
-
-@media screen and (min-width: 600px) {
-  #style-home .usa-banner h1 {
-    font-size: 5.6rem;
-    padding-top: 1.2rem;
+  .iae-click-nav {
+    width: 50px;
   }
+
+  .iae-click-nav ul {
+    position: absolute;
+    z-index: 1000;
+    left: -1000px;
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.6);
+
+    li a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+
+  .iae-click-nav:hover ul {
+    background-color: $color-white;
+    left: 10px;
+    top: 90px;
+
+    @include media($medium-screen) {
+      left: 20px;
+      top: 95px;    
+    }    
+  }
+*/
 }
 
-#style-home .usa-banner .usa-text-small {
-  text-align: center;
+.iae-secondary-navigation.fixed {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 
-#style-home .usa-banner .usa-button-outline-inverse {
-  margin-right: 0;
+.iae-secondary-navigation.fixed a {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-#style-home .usa-banner-link-top {
-  color: #ffffff;
-  float: right;
+.iae-secondary-navigation ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.iae-secondary-navigation ul li {
+  display: list-item;
+  margin: 0;
+}
+
+.iae-secondary-navigation ul li:before {
+  display: none;
+}
+
+.iae-secondary-navigation ul li:after {
+  display: none;
+}
+
+.iae-secondary-navigation ul li {
+  display: inline-block;
+}
+
+.iae-secondary-navigation li:nth-of-type(1) a {
+  margin-left: 60px;
   font-weight: 700;
 }
 
-#style-home .usa-banner-link-top:visited {
+.iae-secondary-navigation li:nth-of-type(1) a:after {
+  content: ":";
+}
+
+.iae-secondary-navigation a,
+.iae-secondary-navigation a:visited {
+  display: inline-block;
+  padding: 5px;
+  color: #000000;
+}
+
+.usa-sidenav-list a {
+  line-height: 1.25em;
+}
+
+#style-home {
+  /*
+  #main p {
+    margin: 0;
+    padding: 0;
+  }
+*/
+  /*
+  .usa-button-secondary:visited {
+    color: $color-white;
+  }
+*/
+  /*
+  .usa-intro {
+    max-width: $home-text-width;
+  }
+*/
+  /*
+  .usa-section-examples {
+    @include media($medium-screen) {
+      .usa-width-five-sixths {
+        @include shift(1);
+      }
+    }
+  }
+*/
+  /*
+  .usa-section {
+    @include padding($home-section-padding null);
+  }
+/*
+  .usa-button-block {
+    @include media($medium-screen) {
+      width: auto;
+    }
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+*/
+  /*
+  .usa-banner {
+    @include media ($medium-screen) {
+      background-image: url("../img/home/homepage_illustrations_flag_cropped_2x.png");
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-size: 582px auto;
+    }
+    background-color: $color-primary-darkest;
+    background-image: none;
+    color: $color-white;
+    @include padding(2rem null 3.7rem);
+
+    .usa-label {
+      display: table;
+      font-family: $font-sans;
+      font-weight: $font-normal;
+      margin-bottom: 1rem;
+    }
+
+    .usa-font-lead {
+      color: $color-white;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      @include media($medium-screen) {
+        font-size: 5.6rem;
+        padding-top: 1.2rem;
+      }
+      color: $color-white;
+      padding-top: 1.5rem;
+    }
+
+    .usa-text-small {
+      text-align: center;
+    }
+
+    .usa-button-outline-inverse {
+      margin-right: 0;
+    }
+  }
+*/
+  /*
+  .usa-banner-link-top {
+    color: $color-white;
+    float: right;
+    font-weight: $font-bold;
+
+    &:visited {
+      color: $color-white;
+    }
+  }
+*/
+  /*
+  .usa-section-alt {
+    background-color: $color-gray-lightest;
+  }
+*/
+  /*
+  .usa-section-dark {
+    background-color: $color-gray-dark;
+    color: $color-white;
+
+    h2,
+    h3,
+    .usa-font-lead {
+      color: $color-white;
+    }
+
+    .usa-width-one-half-top {
+      @include media($medium-screen) {
+        margin-bottom: 7rem;
+      }
+    }
+  }
+*/
+  /*
+  .usa-img-secondary {
+    text-align: center;
+
+    img {
+      width: 260px;
+    }
+  }
+*/
+  /*
+  .usa-circle-block img {
+    width: 124px;
+  }
+*/
+  /*
+  @include media($medium-screen) {
+    .usa-img-circle {
+      float: left;
+      margin-right: 3rem;
+    }
+
+    .usa-graphic-list-heading {
+      clear: none;
+      margin-top: 0;
+    }
+
+    .usa-graphic-list-text {
+      overflow: hidden;
+    }
+  }
+*/
+  /*
+  .usa-circle-block {
+    text-align: center;
+  }
+*/
+  /*
+  .usa-standlast {
+    p {
+      font-size: $h3-font-size;
+    }
+  }
+*/
+  /*
+  .usa-example-heading {
+    font-weight: $font-normal;
+    @include margin(0 null 1.6rem);
+  }
+*/
+  /*
+  .usa-section-examples {
+    .usa-cta {
+      margin-bottom: 1.6rem;
+    }
+
+    .usa-example-link {
+      margin-top: 5rem;
+      max-width: 980px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  } 
+*/
+  /*
+  h1, h2, h3, h4, h5, h6 {
+    color: $color-primary-darker;
+    font-family: $font-serif;
+  }
+*/
+  /*
+  h1, h2 {
+    margin-top: 0;
+  }
+*/
+  /*
+  .usa-font-lead {
+    color: $color-gray-dark;
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
+*/
+  /*
+  .intro-text {
+    font-family: $font-serif;
+    line-height: $lead-line-height;
+    margin-bottom: 4rem;
+  }
+*/
+  /*
+  a,
+  a:hover {
+    border-bottom: 0;
+  }
+*/
+  /*
+  a {
+    > h3,
+    &:visited  {
+      color: $color-primary;
+    }
+  }
+*/
+  /*
+  .usa-button-secondary a:visited {
+    color: $color-white;
+  }
+*/
+}
+
+#style-home .skip {
+  margin: 0;
+  padding: 0;
+}
+
+#style-home .usa-banner {
+  background-color: #003264;
+  background-image: none;
   color: #ffffff;
 }
 
 #style-home .usa-banner-content {
-  max-width: 48rem;
-}
-
-#style-home .usa-section-alt {
-  background-color: #f1f1f1;
-}
-
-#style-home .usa-section-dark {
-  background-color: #323a45;
-  color: #ffffff;
-}
-
-#style-home .usa-section-dark h2,
-#style-home .usa-section-dark h3,
-#style-home .usa-section-dark .usa-font-lead {
-  color: #ffffff;
-}
-
-@media screen and (min-width: 600px) {
-  #style-home .usa-section-dark .usa-width-one-half-top {
-    margin-bottom: 7rem;
-  }
-}
-
-#style-home .usa-img-secondary {
+  margin: 0 auto;
+  padding-top: 5rem;
   text-align: center;
-}
-
-#style-home .usa-img-secondary img {
-  width: 260px;
-}
-
-#style-home .usa-circle-block img {
-  width: 124px;
-}
-
-@media screen and (min-width: 600px) {
-  #style-home .usa-img-circle {
-    float: left;
-    margin-right: 3rem;
-  }
-  #style-home .usa-graphic-list-heading {
-    clear: none;
-    margin-top: 0;
-  }
-  #style-home .usa-graphic-list-text {
-    overflow: hidden;
-  }
-}
-
-#style-home .usa-circle-block {
-  text-align: center;
-}
-
-#style-home .usa-standlast p {
-  font-size: 2rem;
-}
-
-#style-home .usa-example-heading {
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 1.6rem;
-}
-
-#style-home .usa-section-examples .usa-cta {
-  margin-bottom: 1.6rem;
-}
-
-#style-home .usa-section-examples .usa-example-link {
-  margin-top: 5rem;
-  max-width: 980px;
-}
-
-#style-home .usa-section-examples .usa-example-link:first-of-type {
-  margin-top: 0;
-}
-
-#style-home h1, #style-home h2, #style-home h3, #style-home h4, #style-home h5, #style-home h6 {
-  color: #205493;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-}
-
-#style-home h1, #style-home h2 {
-  margin-top: 0;
-}
-
-#style-home .usa-font-lead {
-  color: #323a45;
+  font-size: 3rem;
   font-weight: 300;
-  margin-bottom: 5rem;
 }
 
-#style-home .intro-text {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  line-height: 1.7;
-  margin-bottom: 4rem;
-}
-
-#style-home a,
-#style-home a:hover {
-  border-bottom: 0;
-}
-
-#style-home a > h3, #style-home a:visited {
-  color: #0071bc;
-}
-
-#style-home .usa-button-secondary a:visited {
+#style-home .usa-banner-content h1 {
+  margin-top: 1rem;
+  font-size: 4rem;
   color: #ffffff;
+  font-weight: 300;
+}
+
+#style-home .usa-banner-content b {
+  font-weight: 400;
+}
+
+#style-home .usa-banner-content .usa-button {
+  margin: 5rem auto;
+}
+
+#style-home .usa-grid .usa-width-one-third blockquote {
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 1rem;
+  border-top: solid 4px #e1e1e1;
+  border-left: none;
+}
+
+#styleguide {
+  /*
+  .usa-styleguide-footer {
+    background-color: $color-primary-darker;
+    @include padding(3rem null);
+
+  // This is a styleguide-only rule and is not needed in the main library code for
+  // the footer component which uses different styles
+  // TODO investigate why it's not needed in the main library CSS
+    p, a {
+      @include media($medium-screen) {
+        margin-bottom: 0;
+      }
+      color: $color-white;
+      font-size: $h5-font-size;
+      @include margin(0 null 1.5rem);
+    }
+  }
+*/
+  /*
+  .usa-heading {
+    color: $color-primary-darker;
+  }
+*/
 }
 
 #styleguide .usa-site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: #ffffff;
   border-bottom: 1px solid #aeb0b5;
   width: 100%;
@@ -6134,14 +6488,11 @@ fieldset.usa-fieldset-inputs legend {
   border-bottom: none;
 }
 
-#styleguide .usa-site-header .usa-site-navbar {
-  margin-top: 4px;
-}
-
 @media screen and (min-width: 850px) {
   #styleguide .usa-site-header .usa-site-navbar {
     margin: 2.7rem 0 1rem;
     height: 6rem;
+    background-color: black;
   }
 }
 
@@ -6319,16 +6670,21 @@ fieldset.usa-fieldset-inputs legend {
 }
 
 #styleguide .sidenav {
-  position: fixed;
-  top: 124px;
+  position: absolute;
+  top: 164px;
   bottom: 0;
-  left: 0;
+  left: 10rem;
   width: 250px;
-  border-right: 1px solid #aeb0b5;
-  padding: 5rem 3rem 3rem 3rem;
+  padding: 0rem 3rem 0rem 0rem;
   overflow: auto;
   display: none;
-  z-index: -1;
+}
+
+#styleguide .sidenav.fixed {
+  position: fixed;
+  top: 5em;
+  bottom: 0;
+  left: 10rem;
 }
 
 .lt-ie9 #styleguide .sidenav {
@@ -6382,7 +6738,7 @@ fieldset.usa-fieldset-inputs legend {
 
 @media screen and (min-width: 600px) {
   #styleguide .main-content {
-    top: 124px;
+    top: 164px;
   }
 }
 
@@ -6419,25 +6775,6 @@ fieldset.usa-fieldset-inputs legend {
   #styleguide .styleguide-content {
     padding-right: 3em;
     padding-left: 3em;
-  }
-}
-
-#styleguide .usa-styleguide-footer {
-  background-color: #205493;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-#styleguide .usa-styleguide-footer p, #styleguide .usa-styleguide-footer a {
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 600px) {
-  #styleguide .usa-styleguide-footer p, #styleguide .usa-styleguide-footer a {
-    margin-bottom: 0;
   }
 }
 
@@ -6601,10 +6938,6 @@ fieldset.usa-fieldset-inputs legend {
 
 #styleguide .button_wrapper-dark {
   background: #323a45;
-}
-
-#styleguide .usa-heading {
-  color: #205493;
 }
 
 #styleguide .usa-color-short {

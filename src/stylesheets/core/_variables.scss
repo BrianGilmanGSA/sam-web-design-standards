@@ -26,6 +26,14 @@ $font-bold:           700;
 
 
 // Color
+$iae-color-primary:          #003264;
+$iae-color-primary-hover:    darken($iae-color-primary, 10%);
+$iae-color-primary-alt:      #004b7d;
+$iae-color-primary-alt-hover:darken($iae-color-primary-alt, 10%);
+$iae-color-gray:             #e1e1e1;
+$iae-color-gray-light:       #fafafa;
+$iae-color-gray-hover:       darken($iae-color-gray, 10%);
+
 $color-primary:              #0071bc;
 $color-primary-darker:       #205493;
 $color-primary-darkest:      #112e51;
@@ -82,8 +90,6 @@ $color-action-visited:       #0071bc;
 $color-action-hover:         #205493;
 $color-action-delete:        #981b1e;
 $color-action-delete-hover:  #cd2026;
-
-
 
 
 // Mobile First Breakpoints
