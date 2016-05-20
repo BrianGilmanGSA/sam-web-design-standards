@@ -34,7 +34,7 @@ $iae-color-gray:             #e1e1e1;
 $iae-color-gray-light:       #fafafa;
 $iae-color-gray-hover:       darken($iae-color-gray, 10%);
 
-$color-primary:              #0071bc;
+$color-primary:              $iae-color-primary; //#0071bc;
 $color-primary-darker:       #205493;
 $color-primary-darkest:      #112e51;
 

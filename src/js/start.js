@@ -19,7 +19,13 @@ Body.on('scroll', function(e) {
 });
 
 $(function() {
-  $('a[href*="#"])').click(function() {
+  $('a[href="#"]').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 300);
+    return false;
+  });
+  $('a[href*="#"]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
