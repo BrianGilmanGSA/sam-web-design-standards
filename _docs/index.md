@@ -28,7 +28,7 @@ title: Draft SAM Web Design Standards
   </ul>
 </nav>
 
-<section class="usa-banner">
+<section id="main-content" class="usa-banner">
   <p>The Draft U.S. Web Design Standards<br>
   <b>+</b><br>
   Font Awesome and UI kits<br>
