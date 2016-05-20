@@ -5950,7 +5950,15 @@ blockquote {
 }
 
 .iae-primary-navigation {
+  position: relative;
   background: #003264;
+  height: 44px;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-primary-navigation {
+    height: 65px;
+  }
 }
 
 .iae-primary-navigation ul {
@@ -5973,8 +5981,13 @@ blockquote {
   display: none;
 }
 
+.iae-primary-navigation .iae-click-nav {
+  width: 50px;
+}
+
 .iae-primary-navigation .iae-click-nav > a {
-  position: relative;
+  position: absolute;
+  top: -12px;
   display: inline-block;
   margin: 12px 5px 5px 0;
   width: 44px;
@@ -5989,14 +6002,11 @@ blockquote {
 
 @media screen and (min-width: 600px) {
   .iae-primary-navigation .iae-click-nav > a {
+    top: -5px;
     margin-left: 10px;
     width: 50px;
     height: 50px;
   }
-}
-
-.iae-primary-navigation .iae-click-nav {
-  width: 50px;
 }
 
 .iae-primary-navigation .iae-click-nav ul {
@@ -6019,13 +6029,12 @@ blockquote {
 .iae-primary-navigation .iae-click-nav:hover ul {
   background-color: #ffffff;
   left: 10px;
-  top: 90px;
+  top: 40px;
 }
 
 @media screen and (min-width: 600px) {
   .iae-primary-navigation .iae-click-nav:hover ul {
-    left: 20px;
-    top: 95px;
+    top: 60px;
   }
 }
 
@@ -6034,7 +6043,7 @@ blockquote {
   font-size: 1.7rem;
   position: absolute;
   left: 51px;
-  top: 14px;
+  top: 9px;
   font-weight: 200;
 }
 
@@ -6050,21 +6059,35 @@ blockquote {
 @media screen and (min-width: 600px) {
   .iae-home {
     font-size: 3rem;
-    top: 42px;
-    left: 66px;
+    left: 71px;
   }
 }
 
 .iae-right-nav {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  float: right;
+  top: -2px;
+  right: 5px;
+}
+
+.iae-right-nav .usa-button,
+.iae-right-nav .usa-button:visited {
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-right-nav .usa-button,
+  .iae-right-nav .usa-button:visited {
+    padding: 1rem 2rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
   .iae-right-nav {
-    top: 39px;
+    top: -110px;
+    left: -10px;
   }
 }
 
@@ -6219,83 +6242,9 @@ blockquote {
   }
 }
 
-.iae-primary-navigation .iae-click-nav ul {
-  position: absolute;
-  z-index: 1000;
-  left: -1000px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.6);
-}
-
-.iae-primary-navigation .iae-click-nav ul li a {
-  display: inline-block;
-  width: 100%;
-  padding: 10px;
-}
-
-.iae-primary-navigation .iae-click-nav:hover ul {
-  background-color: #ffffff;
-  left: 10px;
-  top: 90px;
-}
-
-@media screen and (min-width: 600px) {
-  .iae-primary-navigation .iae-click-nav:hover ul {
-    left: 20px;
-    top: 95px;
-  }
-}
-
-.iae-home {
-  display: inline-block;
-  font-size: 1.7rem;
-  position: absolute;
-  left: 51px;
-  top: 50px;
-  font-weight: 200;
-}
-
-.iae-home strong {
-  font-weight: 500;
-}
-
-.iae-home a,
-.iae-home a:visited {
-  color: #ffffff;
-}
-
-@media screen and (min-width: 600px) {
-  .iae-home {
-    font-size: 3rem;
-    top: 42px;
-    left: 66px;
-  }
-}
-
-.iae-right-nav {
-  display: inline-block;
-  position: absolute;
-  top: 35px;
-  right: 10px;
-}
-
-@media screen and (min-width: 600px) {
-  .iae-right-nav {
-    top: 39px;
-  }
-}
-
 section {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-}
-
-section > p {
-  float: none;
-  clear: both;
 }
 
 section:nth-of-type(4) {
@@ -6306,24 +6255,36 @@ section:nth-of-type(4) {
   background-color: #e1e1e1;
 }
 
-#style-home .usa-banner-content {
-  margin: 0 auto;
+.usa-banner {
+  font-size: 1.7rem;
   text-align: center;
-  font-size: 3rem;
   font-weight: 300;
+  font-size: 1.7rem;
 }
 
-#style-home .usa-banner-content p:nth-of-type(1) {
-  line-height: 3rem;
+@media screen and (min-width: 600px) {
+  .usa-banner {
+    font-size: 3rem;
+  }
 }
 
-#style-home .usa-banner-content h1 {
+.usa-banner p:nth-of-type(1) {
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .usa-banner p:nth-of-type(1) {
+    line-height: 3rem;
+  }
+}
+
+.usa-banner h1 {
   margin-top: 1rem;
   font-size: 4rem;
   font-weight: 300;
 }
 
-#style-home .usa-banner-content b {
+.usa-banner b {
   font-weight: 400;
 }
 

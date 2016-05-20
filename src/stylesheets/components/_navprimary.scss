@@ -1,13 +1,24 @@
 .iae-primary-navigation {
+  position:relative;
   background: $iae-color-primary;
+  height: 44px;
+
+  @include media($medium-screen) {
+    height: 65px;
+  }
 
   ul {
     @include unstyled-list;
 
   }
 
+  .iae-click-nav {
+    width: 50px;
+  }  
+
   .iae-click-nav > a {
-    position: relative;
+    position: absolute;
+    top: -12px;
     display: inline-block;
     margin: 12px 5px 5px 0;
     width: 44px;
@@ -19,14 +30,11 @@
     background-repeat: no-repeat;
 
     @include media($medium-screen) {
+      top: -5px;
       margin-left: 10px;
       width: 50px;
       height: 50px;
     }
-  }
-
-  .iae-click-nav {
-    width: 50px;
   }
 
   .iae-click-nav ul {
@@ -47,11 +55,10 @@
   .iae-click-nav:hover ul {
     background-color: $color-white;
     left: 10px;
-    top: 90px;
+    top: 40px;
 
     @include media($medium-screen) {
-      left: 20px;
-      top: 95px;    
+      top: 60px;
     }    
   }
 }
@@ -61,7 +68,7 @@
   font-size: $h4-font-size;
   position: absolute;
   left: 51px;
-  top: 14px;
+  top: 9px;
   font-weight: 200;
 
   strong {
@@ -75,19 +82,31 @@
 
   @include media($medium-screen) {
     font-size: $h2-font-size;
-    top: 42px;
-    left: 66px;
+    left: 71px;
   }
 }
 
 .iae-right-nav {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  float: right;
+  top: -2px;
+  right: 5px;
+
+  .usa-button,
+  .usa-button:visited {
+    font-size: $small-font-size;
+    padding: 1rem 1rem;
+
+    @include media($medium-screen) {
+      padding: 1rem 2rem;
+    }
+  }
 
   @include media($medium-screen) {
-    top: 39px;
+    top: -110px;
+    left: -10px;
+    //top: 6px;
   }
 }
 

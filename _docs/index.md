@@ -29,16 +29,12 @@ title: Draft SAM Web Design Standards
 </nav>
 
 <section class="usa-banner">
-  <div class="usa-grid">
-    <div class="usa-banner-content" id="main-content">
-      <p id="main-content">The Draft U.S. Web Design Standards<br>
-      <b>+</b><br>
-      Font Awesome and UI kits<br>
-      <b>=</b></p>
-      <h1>The <b>SAM</b> Web Design Standards</h1>
-      <p><a class="usa-button usa-button-big iae-button-primary" href="{{ site.baseurl }}/getting-started">View the standards</a></p>
-    </div>
-  </div>
+  <p>The Draft U.S. Web Design Standards<br>
+  <b>+</b><br>
+  Font Awesome and UI kits<br>
+  <b>=</b></p>
+  <h1>The <b>SAM</b> Web Design Standards</h1>
+  <p><a class="usa-button usa-button-big iae-button-primary" href="{{ site.baseurl }}/getting-started">View the standards</a></p>
 </section>
 
 <section class="alt usa-content">
