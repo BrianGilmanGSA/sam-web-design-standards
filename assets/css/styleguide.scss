@@ -49,11 +49,6 @@ $styleguide-site-top:           164px;
 section {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-
-  > p {
-    float: none;
-    clear: both;
-  }
 }
 
 section:nth-of-type(4) {
@@ -64,26 +59,36 @@ section:nth-of-type(4) {
   background-color: $iae-color-gray;
 }
 
-#style-home {
-  .usa-banner-content {
-    margin: 0 auto;
-    text-align: center;
-    font-size: $h2-font-size;
-    font-weight: 300;
+.usa-banner {
+  font-size: $base-font-size;
+  text-align: center;
+  font-weight: 300;
+  font-size: $base-font-size;
 
-    p:nth-of-type(1) {
+  @include media($medium-screen) {
+    font-size: $h2-font-size;
+  }
+
+  p:nth-of-type(1) {
+    line-height: 2rem;
+
+    @include media($medium-screen) {
       line-height: 3rem;
     }
-    h1 {
-      margin-top: 1rem;
-      font-size: $h1-font-size;
-      font-weight: 300;
-    }
-
-    b {
-      font-weight: 400;
-    }
   }
+
+  h1 {
+    margin-top: 1rem;
+    font-size: $h1-font-size;
+    font-weight: 300;
+  }
+
+  b {
+    font-weight: 400;
+  }
+}
+
+#style-home {
 
   .usa-grid {
     .usa-width-one-third blockquote {
