@@ -102,46 +102,46 @@ section:nth-of-type(4) {
       background-position: center bottom;
 
       &.bourbon {
-        @include background-image(url('../img/img_styleguide/bourbon-logo@2x.png'));
+        background-image: url('../img/img_styleguide/bourbon-logo@2x.png');
       }
 
       &.bourbon-neat {
-        @include background-image(url('../img/img_styleguide/bourbon_neat.png'));
+        background-image: url('../img/img_styleguide/bourbon_neat.png');
         background-size: 125px auto;
       }
 
       &.jquery {
-        @include background-image(url('../img/img_styleguide/jQuery-Logo.png'));
+        background-image: url('../img/img_styleguide/jQuery-Logo.png');
         background-size: 150px auto;
       }
 
       &.usa-ui-components {
-        @include background-image(url('../img/img_styleguide/homepage_illustrations_ui_components_2x.png'));
+        background-image: url('../img/img_styleguide/homepage_illustrations_ui_components_2x.png');
         background-size: 90px auto;
       }
 
       &.sass {
-        @include background-image(url('../img/img_styleguide/sass-logo.png'));
+        background-image: url('../img/img_styleguide/sass-logo.png');
         background-size: 80px auto;
       }
 
       &.npm {
-        @include background-image(url('../img/img_styleguide/npm.png'));
+        background-image: url('../img/img_styleguide/npm.png');
         background-size: 150px auto;
       }
 
       &.uswds {
-        @include background-image(url('../img/img_styleguide/uswds.png'));
+        background-image: url('../img/img_styleguide/uswds.png');
         background-size: 80px auto;
       }      
 
       &.font-awesome {
-        @include background-image(url('../img/img_styleguide/fontawesome.png'));
+        background-image: url('../img/img_styleguide/fontawesome.png');
         background-size: 110px auto;
       }
 
       &.uikit {
-        @include background-image(url('../img/img_styleguide/uikit.png'));
+        background-image: url('../img/img_styleguide/uikit.png');
         background-size: 120px auto;
       } 
     }
