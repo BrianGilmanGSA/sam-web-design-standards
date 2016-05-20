@@ -7,12 +7,11 @@
   </head>
 
   <body id="styleguide" class="{{ page.title | slugify }}">
-
   	{% include navbar.html %}
 
   	{% include sidenav.html %}
 
-    <div class="main-content" id="main-content">
+    <div id="main-content" class="usa-grid">
       <div class="styleguide-content usa-content">
         <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
         <p class="usa-font-lead">{{ page.lead }}</p>
@@ -22,10 +21,9 @@
       {% capture my-include %}{% include acronyms.md %}{% endcapture %}
       {{ my-include | markdownify }}
 
-      <footer class="usa-styleguide-footer">
-        {% include footer.html %}
-      </footer>
     </div>
+    {% include footer.html %}
+
     {% include analytics.html %}
 
     {% include scripts.html %}

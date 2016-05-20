@@ -4,152 +4,165 @@ layout: homepage
 title: Draft SAM Web Design Standards
 ---
 
-<a class="skipnav" href="#main-content">Skip main navigation</a>
+<p class="skip"><a class="skipnav" href="#main-content">Skip main navigation</a></p>
 
-<header role="banner">
+{% include navbar.html %}
 
-  <div class="usa-disclaimer">
+<nav class="iae-secondary-navigation" aria-label="Secondary navigation">
+  <ul class="no-js">
+    <li class="iae-click-nav">
+      <a href="#">Top</a>
+    </li>
+    <li>
+      <a href="#details">Details</a>
+    </li>
+    <li>
+      <a href="#the-draft-us-web-design-standards">The USWDS</a>
+    </li>
+    <li>
+      <a href="#giving-back-to-the-greater-good">Giving Back</a>
+    </li>
+    <li>
+      <a href="#contributing">Contribute</a>
+    </li>
+  </ul>
+</nav>
+
+<section class="usa-banner">
+  <div class="usa-grid">
+    <div class="usa-banner-content" id="main-content">
+      <p>The Draft U.S. Web Design Standards<br>
+      <b>+</b><br>
+      Font Awesome and UI kits<br>
+      <b>=</b></p>
+      <h1>The <b>SAM</b> Web Design Standards</h1>
+      <p><a class="usa-button usa-button-big iae-button-primary" href="{{ site.baseurl }}/getting-started">View the standards</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="alt usa-content">
+  <div class="usa-grid">
+    <h2 id="details">The SAM Web Design Standards</h2>
+    <p>Built and maintained by IAE designers and dvelopers, this resource extends The U.S. Web Design Standards to aid IAE designers and developers in creating an integrated award environment for the American people.</p>
+    <h3>What you get</h3>
+    <div class="usa-grid-full">
+      <div class="usa-width-one-third">
+        <p class="uswds"><span class="usa-sr-only">The U.S. Web Design Standards</span></p>
+        <blockquote>
+          <p>The U.S. Web Design Standards are the U.S. government’s very own set of common UI components and visual styles for websites.</p>
+          <cite><a href="https://18f.gsa.gov/2015/09/28/web-design-standards/">18f</a></cite>
+        </blockquote>
+      </div>
+      <div class="usa-width-one-third">
+        <p class="font-awesome"><span class="usa-sr-only">Font Awesome</span></p>
+        <blockquote>
+          <p>Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.</p>
+          <cite><a href="http://fontawesome.io">Dave Gandy</a></cite>
+        </blockquote>
+      </div>
+      <div class="usa-width-one-third">
+        <p class="uikit"><span class="usa-sr-only">UI kits</span></p>
+        <blockquote>
+          <p>Give your values to the kits, they&rsquo;ll give you the HTML comforming to the U.S. and SAM Web Design Standards.</p>
+        </blockquote>
+      </div>
+    </div>
     <div class="usa-grid">
-      <span class="usa-disclaimer-official">
-        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/assets/img/us_flag_small.png">
-        An official website of the United States government
-      </span>
-      <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span>
-    </div>
-  </div>
-
-  <section class="usa-banner">
-    <div class="usa-grid">
-      <nav>
-        <a class="usa-banner-link-top" href="{{ site.repos[0].url }}">View on GitHub</a>
-      </nav>
-      <div class="usa-banner-content" id="main-content">
-        <h1><span class="usa-label">Draft</span> SAM Web Design Standards</h1>
-        <h2 class="usa-font-lead">An extenstion of the <a href="https://standards.usa.gov">U.S. Web Design Standards</a> with open source UI components, kits, and visual style guide to create consistency across the SAM environment</h2>
+      <div class="usa-width-one-third">&nbsp;</div>
+      <div class="usa-width-one-third">
+        <p><a class="usa-button iae-button-primary" href="{{ site.baseurl }}/getting-started"
+  >View the standards</a></p>
       </div>
-        <a class="usa-button usa-button-big usa-button-secondary" href="{{ site.baseurl }}/getting-started">View the standards</a>
+      <div class="usa-width-one-third">&nbsp;</div>
     </div>
-  </section>
-
-</header>
-
-<section class="usa-section usa-section-alt">
-  <div class="usa-grid">
-    <div class="usa-intro">
-      <h2>Tools for creating beautiful online experiences for the American people</h2>
-      <p class="intro-text">Built and maintained by U.S. Digital Service and 18F designers and developers, this resource follows industry-standard web accessibility guidelines and reuses the best practices of existing style libraries and modern web design. It provides a guide for creating beautiful and easy-to-use online experiences for the American people.</p>
-    </div>
-  </div>
-  <div class="usa-grid">
-    <div class="usa-width-one-half">
-      <div class="usa-img-secondary">
-        <img src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_ui_components_2x.png" alt="UI Components">
-      </div>
-      <h3>
-        <a href="{{ site.baseurl }}/getting-started">UI Components</a>
-      </h3>
-      <p>Common web interactions (buttons, forms, navigation, etc.) with reusable and downloadable code</p>
-    </div>
-    <div class="usa-width-one-half">
-      <div class="usa-img-secondary">
-        <img src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_visual_style_guide_2x.png" alt="Visual Style Guide">
-      </div>
-      <h3>
-        <a href="{{ site.baseurl }}/visual-style/">Visual Style Guide</a>
-      </h3>
-      <p>508-compliant colors and typography designed to bring consistency to government web design</p>
-    </div>
-  </div>
-  <div class="usa-grid usa-cta">
-    <a class="usa-button usa-button-secondary" href="{{ site.baseurl }}/getting-started"
->View the standards</a>
   </div>
 </section>
 
-<section class="usa-section">
-  <div class="usa-grid">
-    <div class="usa-intro">
-      <h2>How to use these tools</h2>
-      <h3 class="usa-font-lead">Use a little, use a lot, use it all.<br> Here’s how the draft web design standards may help you:</h3>
+<section class="usa-grid usa-content">
+  <h2 id="the-draft-us-web-design-standards">The Draft U.S. Web Design Standards</h2>
+  <blockquote>
+    <p>The Draft U.S. Web Design Standards are designed to set a new bar for simplicity and consistency across government services, while providing you with plug-and-play design and code.</p>
+    <cite><a href="https://standards.usa.gov">U.S. Web Design Standards</a></cite>
+  </blockquote>
+  <h3>What you get</h3>
+  <div class="usa-grid-full">
+    <div class="usa-width-one-third">&nbsp;</div>
+    <div class="usa-width-one-third">
+      <p class="uswds"><span class="usa-sr-only">The U.S. Web Design Standards</span></p>
+      <blockquote>
+        <p>The following comprise the U.S. Web Design Standards. &ldquo;[Providing] a guide for creating beautiful and easy-to-use online experiences for the American people.&rdquo;</p>
+      </blockquote>
+    </div>
+    <div class="usa-width-one-third">&nbsp;</div>
+  </div>  
+  <div class="usa-grid-full">
+    <div class="usa-width-one-third">
+      <p class="bourbon"><span class="usa-sr-only">Bourbon</span></p>
+      <blockquote>
+        <p>A simple and lightweight mixin library for Sass.</p>
+        <cite><a href="http://bourbon.io">thoughtbot, inc.</a></cite>
+      </blockquote>
+    </div>
+    <div class="usa-width-one-third">
+      <p class="bourbon-neat"><span class="usa-sr-only">Neat</span></p>
+      <blockquote>
+        <p>A lightweight semantic grid framework for Sass and Bourbon.</p>
+        <cite><a href="http://neat.bourbon.io">thoughtbot, inc.</a></cite>
+      </blockquote>
+    </div>
+    <div class="usa-width-one-third">
+      <p class="jquery"><span class="usa-sr-only">jQuery</span></p>
+      <blockquote>
+        <p>jQuery is a fast, small, and feature-rich JavaScript library.</p>
+        <cite><a href="http://jquery.com">The jQuery Foundation</a></cite>
+      </blockquote>
     </div>
   </div>
-  <div class="usa-grid">
-    <div class="usa-width-one-half">
-      <div class="usa-img-secondary">
-        <img src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_designer_2x.png" alt="For designers">
-      </div>
-      <h3>Designers</h3>
-      <p>From prototyping to designing a look and feel, use these tools for designing websites and digital services. Create experiences for your users that feel consistent across government platforms.</p>
+  <div class="usa-grid-full">
+    <div class="usa-width-one-third">
+      <p class="usa-ui-components"><span class="usa-sr-only">UI components</span></p>
+      <blockquote>
+        <p>Common web interactions (buttons, forms, navigation, etc.) with reusable and downloadable code.</p>
+        <cite><a href="https://standards.usa.gov">U.S. Web Design Standards</a></cite>
+      </blockquote>
     </div>
-    <div class="usa-width-one-half">
-      <div class="usa-img-secondary">
-        <img src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_developer_2x.png" alt="For developers">
-      </div>
-      <h3>Developers</h3>
-      <p>Stand up quick prototypes or build whole websites. Save time and development cycles by reusing the code to efficiently update and launch government sites that are accessible and consistent for your users.</p>
+    <div class="usa-width-one-third">
+      <p class="sass"><span class="usa-sr-only">Sass, CSS, and design style guide</span></p>
+      <blockquote>
+        <p>508-compliant colors and typography designed to bring consistency to government web design.</p>
+        <cite><a href="https://standards.usa.gov">U.S. Web Design Standards</a></cite>
+      </blockquote>
+    </div>
+    <div class="usa-width-one-third">
+      <p class="npm"><span class="usa-sr-only">npm</span></p>
+      <blockquote>
+        <p>npm is the package manager for JavaScript.</p>
+        <cite><a href="https://www.npmjs.com">npm Inc.</a></cite>
+      </blockquote>
     </div>
   </div>
-  <div class="usa-grid usa-cta">
-    <a class="usa-button usa-button-secondary" href="{{ site.baseurl }}/getting-started"
->View the standards</a>
+  <p><small>There&rsquo;s more, but the USDS and 18f <a href="https://standards.usa.gov">have it covered</a>.</small></p>
+</section>
+
+<section class="alt usa-content">
+  <div class="usa-grid">
+    <h2 id="giving-back-to-the-greater-good">Giving back to the greater good</h2>
+    <p>IAE designers and developers believe in <a href="https://18f.gsa.gov/2015/09/28/web-design-standards/">the mission of The Draft U.S. Web Design Standards</a>.</p>
+    <p>We can be found contributing back to The Draft U.S. Web Design Standards as much as to the SAM Web Design Standards; or interacting with the vibrant community there. We hope to help create a better experience for all users of Federal websites, not just our own.</p>
+    <p><a class="usa-button iae-button-primary" href="{{ site.baseurl }}/getting-started"
+  >View the standards</a></p>
   </div>
 </section>
 
-<section class="usa-section usa-section-dark">
+<section class="usa-content">
   <div class="usa-grid">
-    <div class="usa-intro">
-      <h2>Principles</h2>
-      <h3 class="usa-font-lead">The Draft U.S. Web Design Standards are designed to create better online experiences for the American people. These are the principles guiding these tools:</h3>
-    </div>
-  </div>
-  <div class="usa-grid">
-    <div class="usa-width-one-half usa-width-one-half-top">
-      <div class="usa-circle-block">
-        <img class="usa-img-circle"  src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_best_easiest_2x.png" alt="Make the best thing the easiest thing">
-      </div>
-      <h3 class="usa-graphic-list-heading">Make the best thing the easiest thing</h3>
-      <p class="usa-graphic-list-text">The draft web design standards are designed to provide designers and developers easy-to-use tools to most effectively deliver the highest quality government websites to the American people.</p>
-    </div>
-    <div class="usa-width-one-half usa-width-one-half-top">
-      <div class="usa-circle-block">
-        <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_508_box_2x.png" alt="Accessibility">
-      </div>
-      <h3 class="usa-graphic-list-heading">Accessibility out of the box</h3>
-      <p class="usa-graphic-list-text">These guidelines focus on accessibility at every step of the design process, setting you on the path to building a usable, accessible site. From colors to code, these tools help you meet high standards of accessibility and conform to Section 508 Standards.</p>
-    </div>
-  </div>
-  <div class="usa-grid">
-    <div class="usa-width-one-half">
-      <div class="usa-circle-block">
-        <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_flexible_2x.png" alt="Design for flexibility">
-      </div>
-      <h3 class="usa-graphic-list-heading">Design for flexibility</h3>
-      <p class="usa-graphic-list-text">These patterns and designs are made to be easily adaptable. These guidelines encourage consistency over uniformity, to give the American people a sense of familiarity and ease when navigating government services, while also allowing for customization of each agency’s unique flavor.</p>
-    </div>
-    <div class="usa-width-one-half">
-      <div class="usa-circle-block">
-        <img class="usa-img-circle" src="{{ site.baseurl }}/assets/img/home/homepage_illustrations_reuse_2x.png" alt="Reuse">
-      </div>
-      <h3 class="usa-graphic-list-heading">Reuse, reuse, reuse</h3>
-      <p class="usa-graphic-list-text">We reviewed, tested, evaluated, and repurposed patterns, code, and designs from dozens of government and private sector style guides to make use of tried-and-true best practices.</p>
-    </div>
-  </div>
-  <div class="usa-grid usa-cta">
-    <a class="usa-button usa-button-secondary" href="{{ site.baseurl }}/getting-started"
->View the standards</a>
-  </div>
-</section>
-
-<section class="usa-section">
-  <div class="usa-grid">
-    <div class="usa-intro usa-standlast">
-      <h2>Contribute</h2>
-      <p>The draft web design standards alpha was created during the summer of 2015 by designers and developers at the U.S. Digital Service and 18F. We will continue to maintain and update these resources as we learn what works best for the people we serve.</p>
-      <p>Help us make it better.</p>
-    </div>
-    <div class="usa-cta">
-      <a class="usa-button usa-button-secondary" href="{{ site.repos[0].url }}">Contribute on GitHub</a>
-    </div>
+    <h2>Contribute</h2>
+    <p>The Standards were created to help IAE designers and developers get up and running quickly toward building for the environment. We have opened them to the world as an open srouce package available through <a href="https://www.npmjs.com">npm</a> (<code>samwds</code>).</p>
+    <p>Help us make it better.</p>
+    <p><a class="usa-button iae-button-primary-alt" href="{{ site.repos[0].url }}">Contribute on GitHub</a></p>
     <p>Or drop us an email at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a></p>
   </div>
 </section>
+
+{% include footer.html %}
