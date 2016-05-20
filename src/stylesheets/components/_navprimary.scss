@@ -61,7 +61,7 @@
   font-size: $h4-font-size;
   position: absolute;
   left: 51px;
-  top: 50px;
+  top: 14px;
   font-weight: 200;
 
   strong {
@@ -83,7 +83,7 @@
 .iae-right-nav {
   display: inline-block;
   position: absolute;
-  top: 35px;
+  top: 10px;
   right: 10px;
 
   @include media($medium-screen) {

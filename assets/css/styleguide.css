@@ -6034,7 +6034,7 @@ blockquote {
   font-size: 1.7rem;
   position: absolute;
   left: 51px;
-  top: 50px;
+  top: 14px;
   font-weight: 200;
 }
 
@@ -6058,7 +6058,7 @@ blockquote {
 .iae-right-nav {
   display: inline-block;
   position: absolute;
-  top: 35px;
+  top: 10px;
   right: 10px;
 }
 
@@ -6216,6 +6216,75 @@ blockquote {
   .disclaimer .stage {
     float: right;
     padding: 0;
+  }
+}
+
+.iae-primary-navigation .iae-click-nav ul {
+  position: absolute;
+  z-index: 1000;
+  left: -1000px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.iae-primary-navigation .iae-click-nav ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+.iae-primary-navigation .iae-click-nav:hover ul {
+  background-color: #ffffff;
+  left: 10px;
+  top: 90px;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-primary-navigation .iae-click-nav:hover ul {
+    left: 20px;
+    top: 95px;
+  }
+}
+
+.iae-home {
+  display: inline-block;
+  font-size: 1.7rem;
+  position: absolute;
+  left: 51px;
+  top: 50px;
+  font-weight: 200;
+}
+
+.iae-home strong {
+  font-weight: 500;
+}
+
+.iae-home a,
+.iae-home a:visited {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-home {
+    font-size: 3rem;
+    top: 42px;
+    left: 66px;
+  }
+}
+
+.iae-right-nav {
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-right-nav {
+    top: 39px;
   }
 }
 
