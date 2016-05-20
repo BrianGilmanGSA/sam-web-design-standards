@@ -6086,8 +6086,7 @@ blockquote {
 
 @media screen and (min-width: 600px) {
   .iae-right-nav {
-    top: -110px;
-    left: -10px;
+    top: 8px;
   }
 }
 
