@@ -14,6 +14,10 @@
         <li>
             {% if tertiaryitem.target == "_blank" %}
               <a href="{{ site.baseurl }}/{{item.url}}/{{secondaryitem.url}}/{{tertiaryitem.url}}" class="{{tertiaryitem.class}} {% if current[2] == tertiaryitemlowercase %} usa-current{% endif %}" target="{% if tertiaryitem.target %}{{tertiaryitem.target}}{% else %}_self{% endif %}">{{tertiaryitem.text}}</a>
+
+            {% elsif false %}
+              <a href="{{ site.baseurl }}/{{item.url}}/{{secondaryitem.url}}/{{tertiaryitem.url}}" class="{{tertiaryitem.class}} {% if current[1] == tertiaryitemlowercase %} usa-current{% endif %}" target="{% if tertiaryitem.target %}{{tertiaryitem.target}}{% else %}_self{% endif %}">{{tertiaryitem.text}}</a>
+
             {% else %}
               <a href="{{ site.baseurl }}/{{item.url}}/{{secondaryitem.url}}/{{tertiaryitem.url}}/" class="{{tertiaryitem.class}} {% if current[1] == tertiaryitemlowercase %} usa-current{% endif %}" target="{% if tertiaryitem.target %}{{tertiaryitem.target}}{% else %}_self{% endif %}">{{tertiaryitem.text}}</a>
             {% endif %}

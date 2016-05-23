@@ -91,6 +91,7 @@ gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
     'src/stylesheets/core/**/*.scss',
     'src/stylesheets/all.scss',
     '!src/stylesheets/lib/**/*',
+    '_styleguide_assets/css/**/*'
   ], function (event) {
     runSequence(
       'clean-assets-css',
@@ -102,6 +103,7 @@ gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
     'assets/js/start.js',
     'src/js/**/*.js',
     '!src/js/vendor/**/*',
+    '_styleguide_assets/js/**/*'
   ], function (event) {
     runSequence(
       'clean-assets-js',
@@ -109,7 +111,10 @@ gulp.task(taskServe, [ 'bundle-clean-build' ], function (done) {
     );
   });
 
-  gulp.watch('src/img/**/*', function (event) {
+  gulp.watch([
+    'src/img/**/*',
+    '_styleguide_assets/img/**/*'
+  ], function (event) {
     runSequence(
       'clean-assets-img',
       'images'
