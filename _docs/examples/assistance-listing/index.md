@@ -28,7 +28,7 @@ lead: <b>Listing number:</b> 10.001<br>Extramural Research<br><b>Agency:</b> Dep
   </ul>
 </div>
 
-<h2 id="financials/">Financials</h2>
+<h2 id="financials">Financials</h2>
 
 <table>
   <thead>
@@ -47,32 +47,33 @@ lead: <b>Listing number:</b> 10.001<br>Extramural Research<br><b>Agency:</b> Dep
       <td>$33,000,000</td>
     </tr>
   </tbody>
+</table>
 
-<h2 id="should-i-apply/">Should I apply?</h2>
-
-<p>Adding<br>some<br>vertical<br>space</p>
-<p>Adding<br>some<br>vertical<br>space</p>
-<p>Adding<br>some<br>vertical<br>space</p>
-
-<h2 id="how-to-apply/">How to apply</h2>
+<h2 id="should-i-apply">Should I apply?</h2>
 
 <p>Adding<br>some<br>vertical<br>space</p>
 <p>Adding<br>some<br>vertical<br>space</p>
 <p>Adding<br>some<br>vertical<br>space</p>
 
-<h2 id="compliance-requirements/">Compliance Requirements</h2>
+<h2 id="how-to-apply">How to apply</h2>
 
 <p>Adding<br>some<br>vertical<br>space</p>
 <p>Adding<br>some<br>vertical<br>space</p>
 <p>Adding<br>some<br>vertical<br>space</p>
 
-<h2 id="contact-information/">Contact information</h2>
+<h2 id="compliance-requirements">Compliance Requirements</h2>
 
 <p>Adding<br>some<br>vertical<br>space</p>
 <p>Adding<br>some<br>vertical<br>space</p>
 <p>Adding<br>some<br>vertical<br>space</p>
 
-<h2 id="listing-history/">Listing history</h2>
+<h2 id="contact-information">Contact information</h2>
+
+<p>Adding<br>some<br>vertical<br>space</p>
+<p>Adding<br>some<br>vertical<br>space</p>
+<p>Adding<br>some<br>vertical<br>space</p>
+
+<h2 id="listing-history">Listing history</h2>
 
 <p>Adding<br>some<br>vertical<br>space</p>
 <p>Adding<br>some<br>vertical<br>space</p>
