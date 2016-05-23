@@ -38,7 +38,10 @@ gulp.task(task, [ 'scss-lint' ], function (done) {
 
   dutil.logMessage(task, 'Compiling Sass');
 
-  var entryFile = 'assets/css/styleguide.scss';
+  // move prism
+  gulp.src('_styleguide_assets/stylesheets/prism.css').pipe(gulp.dest('assets/css'));
+
+  var entryFile = '_styleguide_assets/stylesheets/all.scss';
 
   var defaultStream = gulp.src(entryFile)
     .pipe(
