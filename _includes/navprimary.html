@@ -18,10 +18,13 @@
         {% endif %}
         </li>  
       {% endfor %}
+        <li>
+          <a href="{{ site.repos[0].url }}" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">View on GitHub</a>
+        </li>
       </ul>
-    </li>
-    <li class="iae-right-nav">
-      <a class="usa-button iae-button-gray" href="{{ site.repos[0].url }}" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">View on GitHub</a>
+      <li class="iae-right-nav">
+        <a class="usa-button iae-button-gray" href="{{ site.repos[0].url }}" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">View on GitHub</a>
+      </li>
     </li>
   </ul>
 </nav>
