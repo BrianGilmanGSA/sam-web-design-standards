@@ -1,5 +1,5 @@
 .iae-primary-navigation {
-  position:relative;
+  position: relative;
   background: $iae-color-primary;
   height: 44px;
 
@@ -11,12 +11,12 @@
     @include unstyled-list;
 
   }
+}
 
-  .iae-click-nav {
-    width: 50px;
-  }  
+.iae-click-nav {
+  width: 50px;
 
-  .iae-click-nav > a {
+  > a {
     position: absolute;
     top: -12px;
     display: inline-block;
@@ -36,30 +36,30 @@
       height: 50px;
     }
   }
+}
 
-  .iae-click-nav ul {
-    position: absolute;
-    z-index: 1000;
-    left: -1000px;
-    @include border-top-radius(5px);
-    @include border-bottom-radius(5px);
-    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.6);
+.iae-primary-navigation-dropdown {
+  position: absolute;
+  z-index: 1000;
+  left: -1000px;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  @include box-shadow(3px, 3px, 10px, 0, 0, 0, 0, 0.6);
 
-    li a {
-      display: inline-block;
-      width: 100%;
-      padding: 10px;
-    }
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
   }
+}
 
-  .iae-click-nav:hover ul {
-    background-color: $color-white;
-    left: 10px;
-    top: 40px;
+.iae-click-nav:hover .iae-primary-navigation-dropdown {
+  background-color: $color-white;
+  left: 10px;
+  top: 40px;
 
-    @include media($medium-screen) {
-      top: 55px;
-    }    
+  @include media($medium-screen) {
+    top: 55px;
   }
 }
 
@@ -96,7 +96,7 @@
   .usa-button,
   .usa-button:visited {
     font-size: $small-font-size;
-    padding: 1rem 1rem;
+    padding: 1rem;
 
     @include media($medium-screen) {
       padding: 1rem 2rem;
@@ -105,9 +105,6 @@
 
   @include media($medium-screen) {
     top: 8px;
-    //top: -110px;
-    //left: -10px;
-    //top: 6px;
   }
 }
 
