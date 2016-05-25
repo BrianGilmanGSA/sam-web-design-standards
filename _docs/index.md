@@ -10,7 +10,7 @@ title: Draft SAM Web Design Standards
 
 <nav class="iae-secondary-navigation" aria-label="Secondary navigation">
   <ul class="no-js">
-    <li class="iae-click-nav">
+    <li>
       <a href="#">Top</a>
     </li>
     <li>

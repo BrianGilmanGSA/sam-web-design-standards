@@ -1,3 +1,7 @@
+@mixin box-shadow($horizontal_offset, $vertical_offset, $blur_radius, $spread_radius, $red, $green, $blue, $alpha) {
+  box-shadow: $horizontal_offset $vertical_offset $blur_radius $spread_radius rgba($red, $green, $blue, $alpha);
+}
+
 // Background and text color combinations
 
 @mixin bgcolor($background, $color) {
