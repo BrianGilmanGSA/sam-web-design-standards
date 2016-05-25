@@ -4189,9 +4189,7 @@ select.usa-input-success {
   right: 1.9rem;
 }
 
-.usa-input-error input,
-.usa-input-error textarea,
-.usa-input-error select {
+.usa-input-error input {
   border: 3px solid #cd2026;
   width: calc(100% + 1.5rem);
 }
