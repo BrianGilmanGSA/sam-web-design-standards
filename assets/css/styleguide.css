@@ -5981,11 +5981,11 @@ blockquote {
   display: none;
 }
 
-.iae-primary-navigation .iae-click-nav {
+.iae-click-nav {
   width: 50px;
 }
 
-.iae-primary-navigation .iae-click-nav > a {
+.iae-click-nav > a {
   position: absolute;
   top: -12px;
   display: inline-block;
@@ -6001,7 +6001,7 @@ blockquote {
 }
 
 @media screen and (min-width: 600px) {
-  .iae-primary-navigation .iae-click-nav > a {
+  .iae-click-nav > a {
     top: -5px;
     margin-left: 10px;
     width: 50px;
@@ -6009,7 +6009,7 @@ blockquote {
   }
 }
 
-.iae-primary-navigation .iae-click-nav ul {
+.iae-primary-navigation-dropdown {
   position: absolute;
   z-index: 1000;
   left: -1000px;
@@ -6017,23 +6017,23 @@ blockquote {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.6);
 }
 
-.iae-primary-navigation .iae-click-nav ul li a {
+.iae-primary-navigation-dropdown a {
   display: inline-block;
   width: 100%;
   padding: 10px;
 }
 
-.iae-primary-navigation .iae-click-nav:hover ul {
+.iae-click-nav:hover .iae-primary-navigation-dropdown {
   background-color: #ffffff;
   left: 10px;
   top: 40px;
 }
 
 @media screen and (min-width: 600px) {
-  .iae-primary-navigation .iae-click-nav:hover ul {
+  .iae-click-nav:hover .iae-primary-navigation-dropdown {
     top: 55px;
   }
 }
@@ -6074,7 +6074,7 @@ blockquote {
 .iae-right-nav .usa-button,
 .iae-right-nav .usa-button:visited {
   font-size: 1.4rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -6092,64 +6092,14 @@ blockquote {
 
 .iae-secondary-navigation {
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
-  /*
-  .iae-click-nav > a {
-    position: relative;
-    display: inline-block;
-    margin: 12px 5px 5px 0;
-    width: 44px;
-    height: 44px;
-    @include background-image(url('../img/grid-white.svg'), url('../img/grid-white.png'));
-    background-color: $iae-color-primary;
-    background-size: 22px;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    @include media($medium-screen) {
-      margin-left: 10px;
-      width: 50px;
-      height: 50px;
-    }
-  }
-
-  .iae-click-nav {
-    width: 50px;
-  }
-
-  .iae-click-nav ul {
-    position: absolute;
-    z-index: 1000;
-    left: -1000px;
-    @include border-top-radius(5px);
-    @include border-bottom-radius(5px);
-    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.6);
-
-    li a {
-      display: inline-block;
-      width: 100%;
-      padding: 10px;
-    }
-  }
-
-
-  .iae-click-nav:hover ul {
-    background-color: $color-white;
-    left: 10px;
-    top: 90px;
-
-    @include media($medium-screen) {
-      left: 20px;
-      top: 95px;    
-    }    
-  }
-*/
 }
 
 .iae-secondary-navigation.fixed {
   position: fixed;
-  top: 0px;
+  top: 0;
   z-index: 1;
 }
 
@@ -6188,8 +6138,8 @@ blockquote {
   font-weight: 700;
 }
 
-.iae-secondary-navigation li:nth-of-type(1) a:after {
-  content: ":";
+.iae-secondary-navigation li:nth-of-type(1) a::after {
+  content: ':';
 }
 
 .iae-secondary-navigation a,
