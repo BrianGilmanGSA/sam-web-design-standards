@@ -36,7 +36,7 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Create a branch that lightly defines what you're working on (e.g. add-styles).
 1. Ensure that your contribution works via `npm`, if applicable. See _Building the project locally with gulp_.
 1. Once you're ready to submit a pull request, push your branch up to the repo.
-1. Submit your pull request against the `gh-pages` branch.
+1. Submit your pull request against the `gh-pages-staging` branch.
 
 Have questions or need help with setup? Open an issue here [https://github.com/joshbruce/sam-design-standards/issues](https://github.com/joshbruce/sam-design-standards/issues).
 
@@ -109,7 +109,8 @@ Note: For a list of available gulp commands use:
 
 `$ gulp`
 
-**What do I change?**
+
+### What do I change?
 
 Anything. It will be up to the core team for the SAM Web Design Standards to determine whether to integrate the changes. 
 
