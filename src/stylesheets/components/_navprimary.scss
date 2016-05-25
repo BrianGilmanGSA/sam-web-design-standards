@@ -50,6 +50,15 @@
       width: 100%;
       padding: 10px;
     }
+
+    li:last-of-type {
+      display: inline-block;
+
+      @include media($medium-screen) {
+        display: none;
+
+      }
+    }
   }
 
   .iae-click-nav:hover ul {
@@ -87,27 +96,26 @@
 }
 
 .iae-right-nav {
-  display: inline-block;
-  position: absolute;
-  float: right;
-  top: -2px;
-  right: 5px;
+  display: none;
 
   .usa-button,
   .usa-button:visited {
     font-size: $small-font-size;
     padding: 1rem 1rem;
+    display: none;
 
     @include media($medium-screen) {
       padding: 1rem 2rem;
+      display: inline-block;
     }
   }
 
   @include media($medium-screen) {
+    display: inline-block;
+    position: absolute;
+    float: right;
     top: 8px;
-    //top: -110px;
-    //left: -10px;
-    //top: 6px;
+    right: 5px;
   }
 }
 

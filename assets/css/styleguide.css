@@ -6026,6 +6026,16 @@ blockquote {
   padding: 10px;
 }
 
+.iae-primary-navigation .iae-click-nav ul li:last-of-type {
+  display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+  .iae-primary-navigation .iae-click-nav ul li:last-of-type {
+    display: none;
+  }
+}
+
 .iae-primary-navigation .iae-click-nav:hover ul {
   background-color: #ffffff;
   left: 10px;
@@ -6064,29 +6074,31 @@ blockquote {
 }
 
 .iae-right-nav {
-  display: inline-block;
-  position: absolute;
-  float: right;
-  top: -2px;
-  right: 5px;
+  display: none;
 }
 
 .iae-right-nav .usa-button,
 .iae-right-nav .usa-button:visited {
   font-size: 1.4rem;
   padding: 1rem 1rem;
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
   .iae-right-nav .usa-button,
   .iae-right-nav .usa-button:visited {
     padding: 1rem 2rem;
+    display: inline-block;
   }
 }
 
 @media screen and (min-width: 600px) {
   .iae-right-nav {
+    display: inline-block;
+    position: absolute;
+    float: right;
     top: 8px;
+    right: 5px;
   }
 }
 
