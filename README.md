@@ -1,6 +1,6 @@
 # Draft SAM Web Design Standards
 
-The [Draft SAM Web Design Standards](http://briangilmangsa.github.io/sam-web-design-standards/) extend the [Draft U.S. Web Design Standards](https://playbook.cio.gov/designstandards), which include a library of open source UI components and visual style guide for U.S. federal government websites.
+The [Draft SAM Web Design Standards](http://briangilmangsa.github.io/sam-web-design-standards/) extend the [Draft U.S. Web Design Standards](https://standards.usa.gov), which include a library of open source UI components and visual style guide for U.S. federal government websites.
 
 In addition to defining standards for HTML structure and applied CSS styles, developers for the SAM environment have created user-interface kits (UI kits) available separately to make it even easier to get up and running with developing sites that follow these standards. Further, using the UI kits allows you to quickly develop functioning user interfaces that comply with these standards and allows all of us to make global changes to the SAM environment front-end with minimal development time.
 
@@ -8,17 +8,21 @@ In addition to defining standards for HTML structure and applied CSS styles, dev
 
 **From the SAM Web Design Standards:**
 
-You get access to Sass files and HTML structures for UI Components specific to the SAM environment.
-
-Beyond that, you get access to all the resources available from the U.S. Web Design Standards module as well.
+1. The U.S. Web Design Standards (see below).
+1. [Font Awesome](http://fontawesome.io) for easy to use icons.
+1. SAM custom components and HTML.
+1. UI kits for easy HTML generation (separate downloads).
 
 **From the U.S. Web Design Standards:**
 
 The U.S. Web Design Standards include Sass, HTML structures, and JavaScript, including:
 
-1. [Bourbon](http://bourbon.io) functions.
-2. [Bourbon-neat](http://neat.bourbon.io): Use the U.S. Web Design Standards classes for the [grid](https://standards.usa.gov/grids/).
-3. [jQuery](http://jquery.com): Required for the U.S. Web Design Standards [Accordions UI Component](https://standards.usa.gov/accordions/). Can be used for AJAX requests and other DOM manupulation.
+1. Stanardized HTML for UI components.
+1. A package available through [npmjs.org](https://www.npmjs.com).
+1. A set of flexible [Sass](http://sass-lang.com) files and variables.
+1. [jQuery](http://jquery.com); a lightweight JavaScript library able to manipulate pages and make asynchronous server calls.
+1. [Bourbon Neat](http://neat.bourbon.io) for creating a grid to allow adaptive page layouts.
+1. [Bourbon](http://bourbon.io); a lightweight mixin library for Sass.
 
 ## Install using Node Package Manager
 
