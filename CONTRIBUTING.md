@@ -36,7 +36,7 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Create a branch that lightly defines what you're working on (e.g. add-styles).
 1. Ensure that your contribution works via `npm`, if applicable. See _Building the project locally with gulp_.
 1. Once you're ready to submit a pull request, push your branch up to the repo.
-1. Submit your pull request against the `gh-pages` branch.
+1. Submit your pull request against the `gh-pages-staging` branch.
 
 Have questions or need help with setup? Open an issue here [https://github.com/joshbruce/sam-design-standards/issues](https://github.com/joshbruce/sam-design-standards/issues).
 
@@ -50,23 +50,23 @@ Start by opening Terminal (OS X) or Command Prompt (Windows).
 
 To serve the site locally, we will need Ruby. Confirm Ruby is installed:
 
-```$ gem -v```
+`$ gem -v`
 
 If you do not see a version number, [install RubyGems](https://rubygems.org/pages/download).
 
 #### Confirm Ruby Bundler
 
-```$ bundle -v```
+`$ bundle -v`
 
 If you do not see a version number, and you have confirmed Ruby:
 
-```$ gem install bundler```
+`$ gem install bundler`
 
 #### Confirm NPM
 
 To install the required modules, we will need Node Package Manager (NPM). Confirm NPM is available:
 
-```$ npm -v```
+`$ npm -v`
 
 If you do not see a version number, [install Node.js](https://nodejs.org/en/download/).
 
@@ -74,31 +74,31 @@ If you do not see a version number, [install Node.js](https://nodejs.org/en/down
 
 To compile the site, we will need Gulp - an NPM module. Confirm Gulp is available:
 
-```$ gulp -v```
+`$ gulp -v`
 
 If you do not see a version number, and you have confirmed NPM:
 
-```$ npm install --global gulp-cli```
+`$ npm install --global gulp-cli`
 
 #### Serve the site locally
 
 If you've made it here, you are ready to go. Launch Terminal (OS X) or Command Prompt (Windows) and move to the locally cloned repository.
 
-```$ cd ~/path/to/cloned/repo/sam-web-design-standards```
+`$ cd ~/path/to/cloned/repo/sam-web-design-standards`
 
 **Update gems (this could take a moment):**
 
-First time: ```$ bundle install```
+First time: `$ bundle install`
 
-To update to latest versions: ```$ bundle update```
+To update to latest versions: `$ bundle update`
 
 **Update node modules (this could take a moment, especially the first time):**
 
-```$ npm update```
+`$ npm update`
 
 **Serve the site:**
 
-```$ gulp website:serve```
+`$ gulp website:serve`
 
 After running this command, you should be able to view
 the Standards website locally (http://127.0.0.1:4000).
@@ -107,17 +107,18 @@ This also sets up gulp and Jekyll to watch for file changes; so, as you update f
 
 Note: For a list of available gulp commands use:
 
-```$ gulp```
+`$ gulp`
 
-**What do I change?**
+
+### What do I change?
 
 Anything. It will be up to the core team for the SAM Web Design Standards to determine whether to integrate the changes. 
 
 Having said that:
 
-1. The ```/src``` directory contains the Sass, JavaScript, image files, and fonts for the SAM environment and is the main entry point for displaying the Standards locally. Therefore, any changes to these files should be done in the spirit of recommendations to be applied to the SAM environment as a whole.
-1. The ```/_docs``` contains all the pages for the Standards and is what you will edit to describe and demonstrate proposed change(s).
-1. If you're feeling adventurous - all other files help to display the Standards, but do not affect the content of the Standards or the module for others.
+1. The `/src` directory contains the Sass, JavaScript, image files, and fonts for the SAM environment and is the main entry point for displaying the Standards locally. Therefore, any changes to these files should be done in the spirit of recommendations to be applied to the SAM environment as a whole.
+1. The `/_docs` contains all the pages for the Standards and is what you will edit to describe and demonstrate proposed change(s).
+1. If you're feeling adventurous - all other files help to display the Standards, but do not affect the content of the Standards or the package for others.
 
 **Have fun!**
 

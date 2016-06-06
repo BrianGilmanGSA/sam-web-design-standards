@@ -5,14 +5,13 @@
   {% if current[1] == itemlowercase and item.submenu %}
 <nav class="iae-secondary-navigation" aria-label="Secondary navigation">
   <ul class="no-js">
-    <li class="iae-click-nav">
+  <li>
       {% if item.target == "_blank" %}
       <a href="{{item.url}}" class="{{item.class}} {% if current[2] == itemlowercase %} usa-current{% endif %}" target="{% if item.target %}{{item.target}}{% else %}_self{% endif %}">{{item.text}}</a>
       {% else %}
       <a href="{{ site.baseurl }}/{{item.url}}/" class="{{item.class}} {% if current[1] == itemlowercase %} usa-current{% endif %}" target="{% if item.target %}{{item.target}}{% else %}_self{% endif %}">{{item.text}}</a>
       {% endif %}
     </li>
-      <!-- <ul> -->
     {% for subitem in item.submenu %}
     {% assign subitemlowercase = subitem.url | downcase %}
         <li>
@@ -23,7 +22,6 @@
         {% endif %}
         </li>  
     {% endfor %}
-      <!-- </ul> -->
     </li>
   </ul>
 </nav>
