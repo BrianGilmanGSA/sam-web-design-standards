@@ -75,7 +75,7 @@ lead: See <a href="https://standards.usa.gov/alerts/">US Web Design Standards</a
 
 <h3>Videos and Images</h3>
 
-<p>Informational based and used with text and images. Give users control of the video. Consider what users should do at the conclusion of the video. Make the video short and to the point. First impression is crucial. Users must understand what they are watching and see its value. Provide context around the video content.<sup id="fnref:VideoDesign2"><a href="#fn:VideoDesign2" class="footnote">3</a></sup></p>
+<p>Informational based and used with text and images. Give users control of the video. Consider what users should do at the conclusion of the video. Make the video short and to the point. First impression is crucial. Users must understand what they are watching and see its value. Provide context around the video content.<sup id="fnref:VideoDesign2"><a href="#fn:VideoDesign2" class="footnote">2</a></sup></p>
 
 <h3>User Guides</h3>
 
@@ -86,7 +86,7 @@ lead: See <a href="https://standards.usa.gov/alerts/">US Web Design Standards</a
   <li>Organize information hierarchically.</li>
   <li>Use a glossary of technical terms.</li>
   <li>Define symbols, icons, and codes.</li>
-  <li>Write out sequential steps in an accurate order.<sup id="fnref:GuideDesign2"><a href="#fn:GuideDesign2" class="footnote">2</a></sup></li>
+  <li>Write out sequential steps in an accurate order.<sup id="fnref:GuideDesign2"><a href="#fn:GuideDesign2" class="footnote">3</a></sup></li>
 </ul>
 
 <h3>Frequently Asked Questions (FAQ) Guidelines</h3>
@@ -109,14 +109,14 @@ lead: See <a href="https://standards.usa.gov/alerts/">US Web Design Standards</a
   <li id="fn:WebFormDesign1">
     <a href="http://www.amazon.com/gp/product/B004VFUP2I/ref=dp-kindle-redirect?ie=UTF8&btkr=1">Web Form Design: Filling in the Blanks, by Luke Wroblewski Rosenfeld Media, 2008; version 1.0</a>
     <a href="#fnref:WebFormDesign1" class="reversefootnote">↩</a>
+  </li>  
+  <li id="fn:VideoDesign2">
+    <a href="https://www.nngroup.com/articles/video-usability/">Video Usability, by Amy Schade, Nielsen Norman Group, Nov. 16, 2014</a>
+    <a href="#fnref:VideoDesign2" class="reversefootnote">↩</a>
   </li>
   <li id="fn:GuideDesign2">
     <a href="http://www.userfocus.co.uk/articles/usermanuals.html">Tips for writing user manuals, by Dr. Philip Hodgson, June 4, 2007</a>
     <a href="#fnref:GuideDesign2" class="reversefootnote">↩</a>
-  </li>
-  <li id="fn:VideoDesign2">
-    <a href="https://www.nngroup.com/articles/video-usability/">Video Usability, by Amy Schade, Nielsen Norman Group, Nov. 16, 2014</a>
-    <a href="#fnref:VideoDesign2" class="reversefootnote">↩</a>
   </li>
   <li id="fn:faqDesign3">
     <a href="https://www.nngroup.com/reports/strategic-design-faqs/">Strategic Design for FAQs, Usability Guidelines for Frequently Asked Questions on the Web, by Susan Farrell and Jakob Nielsen</a>
