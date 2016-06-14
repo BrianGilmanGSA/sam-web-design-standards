@@ -341,28 +341,6 @@ section:nth-of-type(4) {
     display: block;
   }
 
-  // Main Content --------- //
-
-  // .main-content {
-  //   @include media($medium-screen) {
-  //     top: $styleguide-site-top;
-  //   }
-  //   @include position(absolute, 4rem 0 0 null);
-  //   @include padding(1em null 0);
-  //   width: 100%;
-  //   z-index: -1;
-  //   .lt-ie9 & {
-  //     width: 75%;
-  //   }
-
-  //   @include media($medium-screen + $styleguide-width-nav-sidebar) {
-  //     width: calc(100% - #{$styleguide-width-nav-sidebar});
-  //     .lt-ie9 & {
-  //       width: 75%;
-  //     }
-  //   }
-  // }
-
   // Styleguide Content -------- //
 
   .styleguide-content {
@@ -382,25 +360,6 @@ section:nth-of-type(4) {
     }
   }
 
-  // Footer --------------- //
-/*
-  .usa-styleguide-footer {
-    background-color: $color-primary-darker;
-    @include padding(3rem null);
-
-  // This is a styleguide-only rule and is not needed in the main library code for
-  // the footer component which uses different styles
-  // TODO investigate why it's not needed in the main library CSS
-    p, a {
-      @include media($medium-screen) {
-        margin-bottom: 0;
-      }
-      color: $color-white;
-      font-size: $h5-font-size;
-      @include margin(0 null 1.5rem);
-    }
-  }
-*/
   // Pattern Preview Boxes -------- //
 
   .preview {
