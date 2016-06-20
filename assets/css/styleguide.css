@@ -6360,24 +6360,6 @@ section:nth-of-type(4) {
 
 #styleguide {
   /*
-  .usa-styleguide-footer {
-    background-color: $color-primary-darker;
-    @include padding(3rem null);
-
-  // This is a styleguide-only rule and is not needed in the main library code for
-  // the footer component which uses different styles
-  // TODO investigate why it's not needed in the main library CSS
-    p, a {
-      @include media($medium-screen) {
-        margin-bottom: 0;
-      }
-      color: $color-white;
-      font-size: $h5-font-size;
-      @include margin(0 null 1.5rem);
-    }
-  }
-*/
-  /*
   .usa-heading {
     color: $color-primary-darker;
   }

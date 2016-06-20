@@ -28,7 +28,7 @@ lead: See <a href="https://standards.usa.gov/alerts/">US Web Design Standards</a
 
 <h2>Instructional Text</h2>
 
-<p>Please set Instructional Text at a 192 Word Character Count (two line limit). These are the circumstances you use instructional text:</p>
+<p>Please set Instructional Text at a 132 Character Count. 2 lines of 66 characters each. These are the circumstances you use instructional text:</p>
 
 <blockquote>
 
