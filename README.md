@@ -1,3 +1,5 @@
+This repository is deprecated; use: [https://github.com/GSA/sam-web-design-standards](https://github.com/GSA/sam-web-design-standards)
+
 # Draft SAM Web Design Standards
 
 The [Draft SAM Web Design Standards](http://briangilmangsa.github.io/sam-web-design-standards/) extend the [Draft U.S. Web Design Standards](https://standards.usa.gov), which include a library of open source UI components and visual style guide for U.S. federal government websites.
